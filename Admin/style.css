@@ -1,0 +1,97 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-image: linear-gradient(to right, #ffffff , #ffffff);
+}
+/*
+COLOUR PLATES
+White- #FFFFFF
+       #F3F6F6
+       #E2EAE9
+       #17A1FA
+Blue - #1270B0 
+*/
+
+/*-------------------------Login---------------------*/
+
+.container
+{
+    background-color: #ffffff;
+    background-size:cover;
+    border-radius:20px;
+}
+.card
+{
+    background-color: #ffffff;
+}
+.text-h
+{
+    color: #1270B0;
+    font-size: 50px;
+    font-weight:bolder;
+    text-align: center;
+}
+.text-button
+{
+    color: #FFFFFF;
+    font-size: 45px;
+    font-weight:bolder;
+    text-align: center;
+}
+.text-a
+{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight:bolder;
+    text-align: center;
+    text-decoration: none;
+}
+.text-free
+{
+    color: #1270B0;
+    font-size: 20px;
+    font-weight:bolder;
+    text-align: center;
+}
+#placeholder
+{
+    background-color: #E2EAE9;
+    color: #1270B0;
+    border-style: hidden;
+    padding-left: 40px;
+    font-weight:bold;
+    height:40px;
+    border-radius:12px;
+}
+input::placeholder {
+    color: #1270B0;
+    font-size: 13px;
+}
+#button
+{
+    background-color: #17A1FA;
+    border-style: hidden;
+    font-size: 18px;
+    font-weight: bolder;
+    height:40px;
+    border-radius:12px;
+}
+#button:hover
+{
+    background-color: #1270B0;
+}
+img:hover
+{
+    scale: 1.1;
+}
+@media screen and (max-width: 768px) {
+    .container {
+    flex-direction: column;
+    align-items: start;
+    }
+}
