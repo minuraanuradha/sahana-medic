@@ -6,7 +6,7 @@
 }
 body
 {
-    background-image: linear-gradient(to right, #ffffff , #ffffff);
+    background-image: linear-gradient(to right, #1270B0 , #17A1FA);
 }
 /*
 COLOUR PLATES
@@ -21,17 +21,20 @@ Blue - #1270B0
 
 .container
 {
-    background-color: #ffffff;
+    background-color: #ffffff00;
     background-size:cover;
     border-radius:20px;
 }
 .card
 {
-    background-color: #ffffff;
+    background-color: #FFFFFF;
+    background-image: url("/Assets/bg_patten.png");
+    background-size:cover;
+    border-radius: 40px;
 }
 .text-h
 {
-    color: #1270B0;
+    color: #ffffff;
     font-size: 50px;
     font-weight:bolder;
     text-align: center;
