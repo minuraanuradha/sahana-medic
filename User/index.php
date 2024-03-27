@@ -27,7 +27,7 @@
                     <h1 class="topic1 text-center">SAHANA</h1>
                     <h1 class="topic2 text-center">MEDICAL CENTER</h1>
                     <div class="row justify-content-center">
-                        <button class="btn_ap " type="submit"><a href="http://">Add Appoinments</a></button>
+                        <button class="btn_ap " type="submit"><a href="Login.php">Add Appoinments</a></button>
                     </div>
                 </div>
               </div>

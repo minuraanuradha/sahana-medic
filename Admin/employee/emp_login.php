@@ -19,7 +19,7 @@
         <div class="row  mt-4 ">
             <div class="container col-12 d-flex align-items-center justify-content-center">
                 <h1 class="text-h col-12 col-sm-8" >LOG IN</h1>
-            </div>
+            </div> 
         </div>
         <div class="row mt-5 ">
             <div class="container col-12 d-flex align-items-center justify-content-center">

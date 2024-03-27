@@ -1,11 +1,11 @@
 <?php
-include('C:\xampp\htdocs\web\sahana-medic\Admin\Controllers\doc_config.php');
+include('./UserConfig.php');
 
 if (isset($_POST['login'])) {
     $email = $_POST['InputEmail1'];
     $password = $_POST['InputPwd'];
     
-    $sql = "SELECT * FROM `doc` WHERE email = ? AND password = ?";
+    $sql = "SELECT * FROM `user` WHERE email = ? AND password = ?";
     $stmt = mysqli_prepare($conn, $sql);
 
     // Bind parameters
@@ -22,7 +22,7 @@ if (isset($_POST['login'])) {
         $row = mysqli_fetch_assoc($result);
 
         $_SESSION['id'] = $row['id'];
-        header("location: ../Admin/doc_dashboard.php");
+        header("location: ../User/userdashboard.php");
         exit();
     } else {
         echo "<script>alert('Invalid Email or Password');</script>";
