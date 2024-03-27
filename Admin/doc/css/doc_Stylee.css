@@ -55,7 +55,17 @@ Blue - #1270B0
     font-weight:bolder;
     text-align: center;
 }
-#placeholder
+#InputEmail1
+{
+    background-color: #E2EAE9;
+    color: #1270B0;
+    border-style: hidden;
+    padding-left: 40px;
+    font-weight:bold;
+    height:40px;
+    border-radius:12px;
+}
+#InputPwd
 {
     background-color: #E2EAE9;
     color: #1270B0;
