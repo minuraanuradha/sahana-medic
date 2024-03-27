@@ -22,7 +22,7 @@ Blue - #1270B0
 #container-center
 {
     background-color: #ffffff;
-    background-image: url("/Assets/bg_patten.png");
+    background-image: url("../../../Assets/bg_patten.png");
     background-size:cover;
     border-radius:20px;
 }
@@ -42,7 +42,7 @@ Blue - #1270B0
 }
 .text-a
 {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 18px;
     font-weight:bolder;
     text-align: center;
@@ -69,7 +69,7 @@ input::placeholder {
     color: #1270B0;
     font-size: 13px;
 }
-#button
+.btn
 {
     background-color: #17A1FA;
     border-style: hidden;
@@ -78,7 +78,7 @@ input::placeholder {
     height:40px;
     border-radius:12px;
 }
-#button:hover
+.btn:hover
 {
     background-color: #1270B0;
 }

@@ -1,0 +1,81 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #ffffff;
+    background-size: cover;
+}
+/*
+COLOUR PLATES
+White- #FFFFFF
+       #F3F6F6
+       #E2EAE9
+       #17A1FA
+Blue - #1270B0 
+*/
+
+/*-------------------------index---------------------*/
+.nav-item a
+{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    margin:0 20px 0 0;
+}
+.active
+{
+    border-bottom:solid 4px #ffffff;
+    color: #1270B0;
+    font-weight: 600;
+}
+.set1
+{
+    background-color: #ffffff;
+    background-image: url(../Assets/bg_patten.png);
+    background-size: contain;
+    border-top:solid 3px #E2EAE9;
+    border-bottom:solid 3px #E2EAE9;
+    width:100%;
+}
+.topic1{
+    font-weight: bolder;
+    font-size: 9vw;
+    color: #1270B0;
+}
+.topic2{
+    font-weight: bold;
+    letter-spacing: 14px;
+    font-size: 3vw;
+    color: #1270B0;
+}
+.btn_ap
+{
+    margin-top: 50px;
+    background-color:#17A1FA ;
+    color: #ffffff;
+    width: 40%;
+    height: 70px;
+    border-radius: 18px;
+    font-size:1.2vw;
+    font-weight:500;
+    border-width: 3px;
+    border-style: hidden;
+}
+.btn_ap:hover
+{
+    background-color:#1270B0 ;
+    border-style:solid;
+    border-color: #1270B0;
+    scale: 1.01;
+    color: #ffffff;
+}
+
+.btn_ap a
+{
+    color: #ffffff;
+    text-decoration: none;
+}

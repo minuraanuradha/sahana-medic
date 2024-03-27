@@ -28,7 +28,7 @@ Blue - #1270B0
 .card
 {
     background-color: #FFFFFF;
-    background-image: url("/Assets/bg_patten.png");
+    background-image: url("../Assets/bg_patten.png");
     background-size:cover;
     border-radius: 40px;
 }
@@ -75,7 +75,7 @@ input::placeholder {
     color: #1270B0;
     font-size: 13px;
 }
-#button
+.btn
 {
     background-color: #17A1FA;
     border-style: hidden;
@@ -84,7 +84,7 @@ input::placeholder {
     height:40px;
     border-radius:12px;
 }
-#button:hover
+.btn:hover
 {
     background-color: #1270B0;
 }
