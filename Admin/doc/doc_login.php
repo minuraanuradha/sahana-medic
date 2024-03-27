@@ -13,7 +13,7 @@
 
 <body>
 
-    <form method="post" action="../Controllers/loginhandler.php">
+    <form method="post" action="../Controllers/doc_loginhandler.php">
 
     <div class="container-fluid d-flex align-items-center justify-content-center" style="height:100vh;" id="log-page">
         <div class="container col-11 col-md-6  " id="container-center" >
@@ -35,7 +35,7 @@
             <div class="row mt-5 mb-5">
                 <div class="container d-flex align-items-center justify-content-center ">
                     <button class="text-white text-button col-12 col-sm-8 btn" type="submit" id="button"> 
-                        <a href="../doc/doc_dashboard.html" class="text-a" >Log in</a> 
+                        <a href="../doc/doc_dashboard.php" class="text-a" >Log in</a> 
                     </button>
                 </div>
             </div>

@@ -2,8 +2,8 @@
 include('./config.php');
 
 if (isset($_POST['login'])) {
-    $email = $_POST['exampleInputEmail1'];
-    $password = $_POST['exampleInputPassword11'];
+    $email = $_POST['InputEmail1'];
+    $password = $_POST['InputPwd'];
     
     $sql = "SELECT * FROM `doc` WHERE email = ? AND password = ?";
     $stmt = mysqli_prepare($conn, $sql);
