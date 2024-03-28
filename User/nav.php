@@ -11,7 +11,7 @@
                           <a class="nav-link active" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link " href="#" >About Us</a>
+                          <a class="nav-link " href="aboutUs.php" >About Us</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#">Blogs</a>
@@ -19,5 +19,5 @@
                       </ul>
                   </div>
                 </div>
-              </nav>
-        </div>
+            </nav>
+</div>
