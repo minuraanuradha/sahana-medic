@@ -13,7 +13,7 @@
 
 <body>
 
-    <form method="post" action="..\Controllers\doc_loginHandler.php">
+    <form method="post" action="..\Controllers\handi.php">
 
     <div class="container-fluid d-flex align-items-center justify-content-center" style="height:100vh;" id="log-page">
         <div class="container col-11 col-md-6  " id="container-center" >

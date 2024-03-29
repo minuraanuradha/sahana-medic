@@ -22,7 +22,7 @@ Blue - #1270B0
 .nav-item a
 {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
     margin:0 20px 0 0;
 }
@@ -35,7 +35,7 @@ Blue - #1270B0
 .set1
 {
     background-color: #ffffff;
-    background-image: url(../Assets/bg_patten.png);
+    background-image: url("../Assets/bg_patten.png");
     background-size: contain;
     border-top:solid 3px #E2EAE9;
     border-bottom:solid 3px #E2EAE9;

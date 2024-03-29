@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <title>About Us</title>
 </head>
@@ -41,12 +41,12 @@
     </div>  
 
   <!--Page Contents-->      
-    <div class="row ">
+  <div class="row ">
     <div class="container set1">
             <div class="row " >
                 <div class="row col-12 p-5 justify-content-center align-items-center " style=" height:max-content;">
                 <div class="col-12 text-center">
-                        <h1>ABOUT US</h1>
+                        <h1 class="mb-3">ABOUT US</h1>
                         <h3>Sahana Medical</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque posuere tellus, in vulputate odio blandit vitae. Aliquam vehicula risus ut ante rhoncus faucibus. Mauris massa metus, facilisis congue hendrerit et, vulputate id elit. Donec a turpis sit amet libero eleifend rhoncus. Aliquam mattis tincidunt nibh nec consectetur. Sed malesuada sodales felis, ut iaculis tortor finibus eget. Suspendisse auctor magna leo, vehicula ultrices lectus tincidunt et.</p>
                     </div>
