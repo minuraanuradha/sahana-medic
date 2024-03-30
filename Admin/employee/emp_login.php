@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../bootstrap/css/bootstrap-grid.rtl.min.css">
     <link rel="stylesheet" href="../employee/css/emp_Style.css">
 
-    <title>Doctor Login</title>
+    <title>Admin Login</title>
 
 </head>
 
@@ -34,7 +34,7 @@
         <div class="row mt-5 mb-5">
             <div class="container d-flex align-items-center justify-content-center ">
                 <button class="text-white text-button col-12 col-sm-8 btn" type="submit" id="button"> 
-                    <a href="../doc/doc_dashboard.html" class="text-a" >Log in</a> 
+                    <a href="../employee/emp_dashboard.php" class="text-a" >Log in</a> 
                 </button>
             </div>
         </div>
