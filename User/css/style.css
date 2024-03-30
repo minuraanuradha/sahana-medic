@@ -7,7 +7,7 @@
 body
 {
     background-color: #ffffff;
-    background-size: cover;
+    background-size: contain;
 }
 /*
 COLOUR PLATES
@@ -19,63 +19,199 @@ Blue - #1270B0
 */
 
 /*-------------------------index---------------------*/
-.nav-item a
+/*---------------------------------------------------*/
+
+/*-------------------------navibar---------------------*/
+.home
+{
+    /*background-image: url("../Assets/01rgb.png");*/
+    background-size: cover;
+    height: 100vh;
+    padding: 0 50px 0 50px;
+}
+.sm_navi
+{
+    background-color: #007e522b;
+    border-radius: 25px;
+    color: #004013;
+    font-weight: 600;
+    height: 40px;
+}
+.nav-item a 
+{
+    color: #004013;
+    font-size: 15px;
+    font-weight: 500;
+}
+.nav-item a:hover
 {
     color: #ffffff;
     font-size: 15px;
-    font-weight: 400;
-    margin:0 20px 0 0;
+    font-weight: 500;
+    background-color: #004c3183;
+    border-radius: 25px;
 }
 .active
 {
-    border-bottom:solid 4px #ffffff;
-    color: #1270B0;
+    background-color: #004c31b4;
+    border-radius: 25px;
+    color: #ffffff;
     font-weight: 600;
 }
-.set1
+.nav-item a.active 
 {
-    background-color: #ffffff;
-    background-image: url("../Assets/bg_patten.png");
-    background-size: contain;
-    border-top:solid 3px #E2EAE9;
-    border-bottom:solid 3px #E2EAE9;
-    width:100%;
-}
-.topic1{
-    font-weight: bolder;
-    font-size: 9vw;
-    color: #1270B0;
-}
-.topic2{
-    font-weight: bold;
-    letter-spacing: 14px;
-    font-size: 3vw;
-    color: #1270B0;
-}
-.btn_ap
-{
-    margin-top: 50px;
-    background-color:#17A1FA ;
+    background-color: #004c31b4;
+    border-radius: 25px;
     color: #ffffff;
-    width: 40%;
-    height: 70px;
-    border-radius: 18px;
+    font-weight: 600;
+}
+.btn02
+{
+    background-color:#ffffff ;
+    border-color: #004c32;
+    width: 10%;
+    height: 40px;
+    border-radius: 20px;
     font-size:1.2vw;
     font-weight:500;
     border-width: 3px;
-    border-style: hidden;
 }
-.btn_ap:hover
+.btn02:hover
 {
-    background-color:#1270B0 ;
+    background-color:#004c32 ;
     border-style:solid;
-    border-color: #1270B0;
     scale: 1.01;
     color: #ffffff;
 }
-
-.btn_ap a
+.btn02 a
+{
+    color: #004c32;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+.btn02 a:hover
 {
     color: #ffffff;
+}
+
+/*-------------------------set01---------------------*/
+.set_main
+{
+    background-color: #6a6a6a;
+    background-size: cover;
+    width:100%;
+    height: 80vh;
+    border-radius: 25px;
+    background-image: url("../Assets/Green2.png");
+    padding-top: 3vw;
+    padding-left: 6vw;
+}
+/*.set_mini
+{
+    background-color: #ffffff31;
+    border-radius: 25px 0 0 25px;
+    height: 100%;
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
+}*/
+
+.topic1{
+    
+    margin-top: 8%;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 3vw;
+    color: #ffffff;
+    text-shadow: 5px 5px 20px black;
+}
+.topic2{
+    font-weight: bolder;
+    font-size: 11vw;
+    margin-top: -30px;
+    color: #ffffff;
+    text-shadow: 5px 5px 20px black;
+}
+.sub_topic
+{
+    color: #ffffff;
+    margin-top: -30px;
+}
+.btn_ap
+{
+    margin-top: 20px;
+    background-color:#ffffff ;
+    color: #004013;
+    width: 20vw;
+    height: 60px;
+    border-radius: 40px;
+    font-size:1.2vw;
+    font-weight:500;
+    border-width: 3px;
+}
+.btn_ap:hover
+{
+    
+    background-color:#ffffff8f ;
+    border-style:solid;
+    border-color: #1270B0;
+    scale: 1.01;
+    color: #ffffff3d;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.btn_ap a
+{
+    color: #004013;
     text-decoration: none;
+}
+
+/*---------------------------about us-----------*/
+.home1
+{
+    /*background-image: url("../Assets/01rgb.png");*/
+    background-size: cover;
+    height: 100vh;
+    padding: 0 50px 0 50px;
+}
+.home2
+{
+    background-color: #ffffff;
+    background-size: cover;
+    width:100%;
+    height: max-content;
+    border-radius: 25px;
+    background-image: url("../Assets/Gren.jpg");
+    padding: 0 0 0 0;
+}
+.settopic
+{
+    background-color: #caffcf;
+    background-size: cover;
+    width:100%;
+    height: 50vh;
+    border-radius: 25px;
+    background-image: url("../Assets/Gren.jpg");
+    padding-left: 6vw;
+    padding-top: 2vw;
+}
+.set1
+{
+    background-color: #caffcf;
+    background-size: cover;
+    width:100%;
+    height: max-content;
+    border-radius: 25px;
+    background-image: url("../Assets/Gren.jpg");
+    padding: 0 0px 0 0px;
+}
+.topic3
+{
+    font-weight: bolder;
+    font-size: 6vw;
+    margin-top: -30px;
+    color: #004013;
+    text-shadow: 2px 2px 20px rgba(67, 67, 67, 0.557);
 }

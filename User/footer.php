@@ -1,4 +1,4 @@
-<footer class="text-center text-lg-start  text-white" style="background-color: #1270B0;">
+<footer class="text-center text-lg-start  text-white" style="background-color: #;">
 
 <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom">
 
@@ -9,9 +9,7 @@
   <div class="container text-center text-md-start mt-5  text-white">
     <div class="row mt-3">
       <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-        <h6 class="text-uppercase fw-bold mb-4">
-          <i class="bi bi-house-door-fill"></i>&nbsp;SAHANA MEDICAL
-        </h6>
+      <img  src="../Assets/Logo02.png" alt="" style=" height:4vw;margin-left:" >
         <p>
         Immerse yourself in luxury amidst nature at Nature Life Eco Resort. Offering breathtaking views, a private pool, and exquisite interiors, this villa is a sanctuary of peace and elegance. Perfect for serene family holidays or intimate escapes.
         </p>

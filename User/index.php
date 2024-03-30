@@ -23,34 +23,23 @@
     <div class="row ">
         <div class="container "  >
             <div class="row " >
-                <div class="col-12 col-lg-12 p-5 justify-content-center align-items-center set1" style=" height:max-content;">
-                    <h1 class="topic1 text-center">SAHANA</h1>
-                    <h1 class="topic2 text-center">MEDICAL CENTER</h1>
-                    <div class="row justify-content-center">
+                <div class="col-12 col-md-12 set_main d-flex ">
+                    <div class="col-12 col-md-6 set_mini justify-content-center align-iteam-center">
+                    <h1 class="topic1 text-start">Take Care of your</h1>
+                    <h1 class="topic2 text-start"> HELTH </h1>
+                    <p  class="sub_topic text-start">lasjdvnoksjdv nowkv wkvinwievkw evp zsdv awbv </p>
+                    <div class="row ">
                         <button class="btn_ap " type="submit"><a href="Login.php">Add Appoinments</a></button>
+                    </div>
                     </div>
                 </div>
               </div>
         </div>
     </div>
-  </div>
+    </div>
+    </div>
 
-
-  <div class="container set1">
-            <div class="row " >
-                <div class="row p-5 justify-content-center align-items-center " style=" height:max-content;">
-                    <div class="col-12 col-lg-6">
-                    <img src="" class="rounded mx-auto d-block" alt="...">
-                    </div>
-                    <div class="col-12 col-lg-5">
-                        <h2>DOCTOR</h2>
-                        <h3>Dr. Name Here</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque posuere tellus, in vulputate odio blandit vitae. Aliquam vehicula risus ut ante rhoncus faucibus. Mauris massa metus, facilisis congue hendrerit et, vulputate id elit. Donec a turpis sit amet libero eleifend rhoncus. Aliquam mattis tincidunt nibh nec consectetur. Sed malesuada sodales felis, ut iaculis tortor finibus eget. Suspendisse auctor magna leo, vehicula ultrices lectus tincidunt et.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    
   <!--footer--> 
   <div class="col-12 mt-3 bg-success">
         <?php
