@@ -1,5 +1,5 @@
 <div class="row" >
-            <nav class="navbar navbar-expand-md -tertiary cnav " style="background-color: #caffcf;">
+        <nav class="navbar navbar-expand-md -tertiary cnav " style="background-color: #caffcf;">
                 <div class="container-fluid " >
                   <a class="navbar-brand" href="#"><h4 style="font-weight: bolder;"></h4>
                     <img  src="../Assets/Logo02.png" alt="" style=" height:3vw;margin-left:40px" >
@@ -21,8 +21,20 @@
                       </ul>
                       
                   </div>
-                 <button class="btn02" type="submit" style="margin-right:0px"><a href="#" >Log Out</a></button>
-                  <button class="btn02" type="submit" style="margin-right:40px"><a href="Login.php" >Profile</a></button>
+                  
+                <!-- Example single danger button -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Action
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Setting</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Log Out</a>
                 </div>
-            </nav>
-</div>
+            </div>
+
+        </nav>
+</div>  
