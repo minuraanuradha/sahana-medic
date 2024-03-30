@@ -92,3 +92,17 @@ input::placeholder {
 {
     background-color: #1270B0;
 }
+.btnsub
+{
+    background-color: #ffffff;
+    border-style: hidden;
+    font-size: 18px;
+    font-weight:lighter;
+    height:40px;
+    border-radius:12px;
+    border:#17A1FA 3px solid;
+}
+.btnsub:hover
+{
+    background-color: #E2EAE9;
+}
