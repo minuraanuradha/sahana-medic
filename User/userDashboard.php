@@ -10,32 +10,51 @@
     <title>index</title>
 </head>
 <body>
-  <div class="container-fluid  profile_home">
+    <div class="container-fluid  profile_home">
     <!--Nav--> 
-    <div class="col-12 ">
-        <?php
-        include "nav_profile.php";
-        ?>
-    </div>
-  <!--Page Contents-->      
-    <div class="row ">
-        <div class="container "  >
-            <div class="row " >
-                <div class="col-12 col-md-12  d-flex ">
-                    <div class="col-12 col-md-6 set_mini justify-content-center align-iteam-center">
-                    <h1 class="topic1 text-start">Take Care  your</h1>
-                    <h1 class="topic2 text-start"> HELTH </h1>
-                    <p  class="sub_topic text-start">lasjdvnoksjdv nowkv wkvinwievkw evp zsdv awbv </p>
-                    <div class="row ">
-                        <button class="btn_ap " type="submit"><a href="Signup.php">Add Appoinments</a></button>
-                    </div>
-                    </div>
-                </div>
-              </div>
+        <div class="col-12 ">
+            <?php
+            include "nav_profile.php";
+             ?>
         </div>
     </div>
-    </div>
-    </div>
+
+    
+<div class="container-fluid  home mt-3">
+<!--Page Contents-->      
+  <div class="row ">
+      <div class="container "  >
+          <div class="row " >
+              <div class="col-12 col-md-12 set_main d-flex ">
+                  <div class="col-12 col-md-6 set_mini justify-content-center align-iteam-center">
+                <div class="card cardpro" style="width: 18rem;">
+                    <img class="card-img-top" src="./Assets/Logo01.png" alt="Card image cap">
+                        <div class="card-body">
+                             <h5 class="card-title">Profile Name</h5>
+                        </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Age</li>
+                        <li class="list-group-item">Weight</li>
+                        <li class="list-group-item">Birth ADy</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Edit Profile</a>
+                        <a href="#" class="card-link">Delete Profile</a>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-12 col-md-6 set_mini justify-content-center align-iteam-center">
+                    <div class="row ">
+                          <button class="btn_ap " type="submit"><a href="Signup.php">Add Appoinments</a></button>
+                    </div>
+                  </div>
+              </div>
+            </div>
+      </div>
+  </div>
+  </div>
+  </div>
+
 
     
 
