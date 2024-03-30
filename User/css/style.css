@@ -215,3 +215,14 @@ Blue - #1270B0
     color: #004013;
     text-shadow: 2px 2px 20px rgba(67, 67, 67, 0.557);
 }
+
+/*---------------------------------------*/
+
+.profile_home
+{
+    /*background-image: url("../Assets/01rgb.png");*/
+    background-color: #caffcf;
+    background-size: cover;
+    height:max-content;
+    padding: 0 50px 0 50px;
+}
