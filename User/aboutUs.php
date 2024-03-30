@@ -11,19 +11,21 @@
 </head>
 <body>
 
-<div class="container-fluid  home">
+<div class="container-fluid  home1">
 
   <!--Nav--> 
     <div class="col-12 ">
-        <div class="row" >
-            <nav class="navbar navbar-expand-lg -tertiary cnav " style="background-color: #17A1FA;">
-                <div class="container-fluid" >
-                  <a class="navbar-brand" href="#"><h4 style="font-weight: bolder;"></h4></a>
-                  <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="row" >
+            <nav class="navbar navbar-expand-md -tertiary cnav " style="background-color: #ffffff;">
+                <div class="container-fluid " >
+                  <a class="navbar-brand" href="#"><h4 style="font-weight: bolder;"></h4>
+                    <img  src="../Assets/Logo02.png" alt="" style=" height:3vw;margin-left:40px" >
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>-->
-                  <div class=" navbar-collapse justify-content-center" id="navbarTogglerDemo02">
-                    <ul class="nav justify-content-center ">
+                  </button>
+                  <div class=" navbar-collapse justify-content-center " id="navbarTogglerDemo02" >
+                    <ul class="nav justify-content-center sm_navi">
                         <li class="nav-item">
                           <a class="nav-link " href="index.php">Home</a>
                         </li>
@@ -35,55 +37,64 @@
                         </li>
                       </ul>
                   </div>
+                  <button class="btn02" type="submit" style="margin-right:40px"><a href="Login.php" >Profile</a></button>
                 </div>
             </nav>
-        </div>
+      </div>
     </div>  
 
   <!--Page Contents-->      
-  <div class="row ">
-    <div class="container set1">
+    <div class="row  ">
+    <div class="container settopic">
             <div class="row " >
                 <div class="row col-12 p-5 justify-content-center align-items-center " style=" height:max-content;">
                 <div class="col-12 text-center">
-                        <h1 class="mb-3">ABOUT US</h1>
-                        <h3>Sahana Medical</h3>
+                        <h1 class="mb-3 topic3">ABOUT US</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque posuere tellus, in vulputate odio blandit vitae. Aliquam vehicula risus ut ante rhoncus faucibus. Mauris massa metus, facilisis congue hendrerit et, vulputate id elit. Donec a turpis sit amet libero eleifend rhoncus. Aliquam mattis tincidunt nibh nec consectetur. Sed malesuada sodales felis, ut iaculis tortor finibus eget. Suspendisse auctor magna leo, vehicula ultrices lectus tincidunt et.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container set1">
-            <div class="row " >
-                <div class="row p-5 justify-content-center align-items-center " style=" height:max-content;">
-                    <div class="col-12 col-lg-6">
-                    <img src="" class="rounded mx-auto d-block" alt="...">
-                    </div>
-                    <div class="col-12 col-lg-5">
-                        <h2>DOCTOR</h2>
-                        <h3>Dr. Name Here</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque posuere tellus, in vulputate odio blandit vitae. Aliquam vehicula risus ut ante rhoncus faucibus. Mauris massa metus, facilisis congue hendrerit et, vulputate id elit. Donec a turpis sit amet libero eleifend rhoncus. Aliquam mattis tincidunt nibh nec consectetur. Sed malesuada sodales felis, ut iaculis tortor finibus eget. Suspendisse auctor magna leo, vehicula ultrices lectus tincidunt et.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container set1">
-            <div class="row " >
-                <div class="row p-5 justify-content-center align-items-center " style=" height:max-content;">
-                <div class="col-12 col-lg-5">
-                        <h2>EMPLOYEE</h2>
-                        <h3>Name Here</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque posuere tellus, in vulputate odio blandit vitae. Aliquam vehicula risus ut ante rhoncus faucibus. Mauris massa metus, facilisis congue hendrerit et, vulputate id elit. Donec a turpis sit amet libero eleifend rhoncus. Aliquam mattis tincidunt nibh nec consectetur. Sed malesuada sodales felis, ut iaculis tortor finibus eget. Suspendisse auctor magna leo, vehicula ultrices lectus tincidunt et.</p>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                    <img src="" class="rounded mx-auto d-block" alt="...">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        
 
+    </div>
 </div>
+<div class="container-fluid  home2">
+  
+  <div class="container set1">
+      <div class="row " >
+          <div class="row p-5 justify-content-center align-items-center " style=" height:max-content;">
+              <div class="col-12 col-lg-6">
+              <img src="" class="rounded mx-auto d-block" alt="...">
+              </div>
+              <div class="col-12 col-lg-5">
+                  <h2>DOCTOR</h2>
+                  <h3>Dr. Name Here</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque posuere tellus, in vulputate odio blandit vitae. Aliquam vehicula risus ut ante rhoncus faucibus. Mauris massa metus, facilisis congue hendrerit et, vulputate id elit. Donec a turpis sit amet libero eleifend rhoncus. Aliquam mattis tincidunt nibh nec consectetur. Sed malesuada sodales felis, ut iaculis tortor finibus eget. Suspendisse auctor magna leo, vehicula ultrices lectus tincidunt et.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="container-fluid  home2">
+
+  <div class="container set1">
+      <div class="row " >
+          <div class="row p-5 justify-content-center align-items-center " style=" height:max-content;">
+          <div class="col-12 col-lg-5">
+                  <h2>DOCTOR</h2>
+                  <h3>Dr. Name Here</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque posuere tellus, in vulputate odio blandit vitae. Aliquam vehicula risus ut ante rhoncus faucibus. Mauris massa metus, facilisis congue hendrerit et, vulputate id elit. Donec a turpis sit amet libero eleifend rhoncus. Aliquam mattis tincidunt nibh nec consectetur. Sed malesuada sodales felis, ut iaculis tortor finibus eget. Suspendisse auctor magna leo, vehicula ultrices lectus tincidunt et.</p>
+              </div>    
+          <div class="col-12 col-lg-6">
+              <img src="" class="rounded mx-auto d-block" alt="...">
+              </div>
+              
+          </div>
+      </div>
+  </div>
+</div>   
+   
 
   <!--footer--> 
   <div class="col-12 mt-3 bg-success">
