@@ -1,4 +1,4 @@
-<footer class="text-center text-lg-start  text-white" style="background-color: #;">
+<footer class="text-center text-lg-start  text-white" style="background-color: #001b0f;">
 
 <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom">
 

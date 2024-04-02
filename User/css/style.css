@@ -6,7 +6,7 @@
 }
 body
 {
-    background-color: #ffffff;
+    background-color: #c2ff1c37;
     background-size: contain;
 }
 /*
@@ -18,9 +18,6 @@ White- #FFFFFF
 Blue - #1270B0 
 */
 
-/*-------------------------index---------------------*/
-/*---------------------------------------------------*/
-
 /*-------------------------navibar---------------------*/
 .home
 {
@@ -31,7 +28,7 @@ Blue - #1270B0
 }
 .sm_navi
 {
-    background-color: #007e522b;
+    background-color: #0075423c;
     border-radius: 25px;
     color: #004013;
     font-weight: 600;
@@ -39,7 +36,7 @@ Blue - #1270B0
 }
 .nav-item a 
 {
-    color: #004013;
+    color: #007542;
     font-size: 15px;
     font-weight: 500;
 }
@@ -48,27 +45,27 @@ Blue - #1270B0
     color: #ffffff;
     font-size: 15px;
     font-weight: 500;
-    background-color: #004c3183;
+    background-color: #1e8c45;
     border-radius: 25px;
 }
 .active
 {
-    background-color: #004c31b4;
+    background-color: #007542;
     border-radius: 25px;
     color: #ffffff;
     font-weight: 600;
 }
 .nav-item a.active 
 {
-    background-color: #004c31b4;
+    background-color: #007542;
     border-radius: 25px;
     color: #ffffff;
     font-weight: 600;
 }
 .btn02
 {
-    background-color:#ffffff ;
-    border-color: #004c32;
+    background-color:#c2ff1c00 ;
+    border-color: #007542;
     width: 10%;
     height: 40px;
     border-radius: 20px;
@@ -78,14 +75,14 @@ Blue - #1270B0
 }
 .btn02:hover
 {
-    background-color:#004c32 ;
+    background-color:#007542 ;
     border-style:solid;
     scale: 1.01;
     color: #ffffff;
 }
 .btn02 a
 {
-    color: #004c32;
+    color: #007542;
     text-decoration: none;
     font-size: 15px;
     font-weight: 500;
@@ -95,7 +92,8 @@ Blue - #1270B0
     color: #ffffff;
 }
 
-/*-------------------------set01---------------------*/
+
+/*-------------------------Page Contents 01---------------------*/
 .set_main
 {
     background-color: #6a6a6a;
@@ -106,6 +104,14 @@ Blue - #1270B0
     background-image: url("../Assets/Green2.png");
     padding-top: 3vw;
     padding-left: 6vw;
+}
+.set_main1
+{
+    background-color: #ffffff00;
+    background-size: cover;
+    width:100%;
+    height: max-content;
+    border-radius: 25px;
 }
 /*.set_mini
 {
@@ -147,20 +153,16 @@ Blue - #1270B0
     border-radius: 40px;
     font-size:1.2vw;
     font-weight:500;
-    border-width: 3px;
 }
 .btn_ap:hover
 {
-    
     background-color:#ffffff8f ;
-    border-style:solid;
-    border-color: #1270B0;
     scale: 1.01;
-    color: #ffffff3d;
+    color: #ffffff;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.556);
 }
 .btn_ap a
 {
@@ -168,13 +170,93 @@ Blue - #1270B0
     text-decoration: none;
 }
 
+.sub_topic1
+{
+    color: #004013;
+    font-size: 3vw;
+    font-weight: 700;
+    background-color: #a6a6a600;
+    border-radius: 15px;
+}
+.card
+{
+    margin: 10px;
+    height: max-content;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.154);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+#card01
+{
+    background-color: #9ce931ca;
+}
+#card02
+{
+    background-color: #5faf2a;
+}
+#card03
+{
+    background-color: #78d23d;
+}
+#card04
+{
+    background-color: #9be931;
+}
+#card05
+{
+    background-color: #007542;
+    background-image: url(../Assets/Green2.png);
+    box-shadow: 0 4px 30px rgb(255, 255, 255);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.carousel-item
+{
+    height: 1vh;
+}
+.carousel-inner .carousel-item {
+    transition: -webkit-transform 1s ease;
+    transition: transform 1s ease;
+    transition: transform 1s ease, -webkit-transform 1s ease;
+  }
+
+  .btn_ap1
+  {
+      margin-top: 20px;
+      background-color:#ffffff ;
+      color: #004013;
+      width: 20vw;
+      height: 45px;
+      border-radius: 40px;
+      font-size:1.2vw;
+      font-weight:500;
+  }
+  .btn_ap1:hover
+  {
+      background-color:#ffffff8f ;
+      scale: 1.01;
+      color: #ffffff;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.556);
+  }  
+
+
+  
 /*---------------------------about us-----------*/
 .home1
 {
     /*background-image: url("../Assets/01rgb.png");*/
     background-size: cover;
-    height: 100vh;
+    height: max-content;
     padding: 0 50px 0 50px;
+    margin-bottom: 50px;
 }
 .home2
 {
@@ -215,4 +297,3 @@ Blue - #1270B0
     color: #004013;
     text-shadow: 2px 2px 20px rgba(67, 67, 67, 0.557);
 }
-
