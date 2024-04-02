@@ -51,7 +51,7 @@
 
             <div class="col-12 col-md-3  justify-content-center align-iteam-center">
               <div class="card text-center" id="card01">
-                <img class="card-img-top" src="./Assets/s1.png" alt="Card image cap">
+                <img class="card-img-top" src="./Assets/S01.png" alt="Card image cap">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
@@ -60,7 +60,7 @@
             
             <div class="col-12 col-md-3  justify-content-center align-iteam-center">
               <div class="card text-center" id="card02">
-              <img class="card-img-top" src="..." alt="Card image cap">
+              <img class="card-img-top" src="./Assets/S02.png" alt="Card image cap">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
@@ -69,7 +69,7 @@
 
             <div class="col-12 col-md-3  justify-content-center align-iteam-center">
               <div class="card text-center" id="card03">
-              <img class="card-img-top" src="..." alt="Card image cap">
+              <img class="card-img-top" src="./Assets/S03.png" alt="Card image cap">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
@@ -78,7 +78,7 @@
             
             <div class="col-12 col-md-3  justify-content-center align-iteam-center">
               <div class="card text-center" id="card04">
-              <img class="card-img-top" src="..." alt="Card image cap">
+              <img class="card-img-top" src="./Assets/S04.png" alt="Card image cap">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>

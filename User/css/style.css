@@ -173,14 +173,14 @@ Blue - #1270B0
 .sub_topic1
 {
     color: #004013;
-    font-size: 60px;
+    font-size: 3vw;
     font-weight: 700;
     background-color: #a6a6a600;
     border-radius: 15px;
 }
 .card
 {
-    margin: 5px;
+    margin: 10px;
     height: max-content;
     border-radius: 25px;
     padding: 10px;
@@ -215,7 +215,6 @@ Blue - #1270B0
     border: 1px solid rgb(255, 255, 255);
 }
 
-
 .carousel-item
 {
     height: 1vh;
@@ -247,13 +246,17 @@ Blue - #1270B0
       -webkit-backdrop-filter: blur(5px);
       border: 1px solid rgba(255, 255, 255, 0.556);
   }  
+
+
+  
 /*---------------------------about us-----------*/
 .home1
 {
     /*background-image: url("../Assets/01rgb.png");*/
     background-size: cover;
-    height: 100vh;
+    height: max-content;
     padding: 0 50px 0 50px;
+    margin-bottom: 50px;
 }
 .home2
 {

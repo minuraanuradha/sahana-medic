@@ -33,13 +33,13 @@
                   <a class="nav-link " href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="aboutUs.php" >About Us</a>
+                  <a class="nav-link " href="aboutUs.php" >About Us</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contactUs.php">Contac Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="blog.php">Blogs</a>
+                  <a class="nav-link active" href="blog.php">Blogs</a>
                 </li>
               </ul>
           </div>
@@ -57,7 +57,7 @@
       <div class="row " >
         <div class="row col-12 p-5 justify-content-center align-items-center " style=" height:max-content;">
             <div class="col-12 text-center">
-                <h1 class="mb-3 topic3">ABOUT US</h1>
+                <h1 class="mb-3 topic3">BLOGS</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque posuere tellus, in vulputate odio blandit vitae. Aliquam vehicula risus ut ante rhoncus faucibus. Mauris massa metus, facilisis congue hendrerit et, vulputate id elit. Donec a turpis sit amet libero eleifend rhoncus. Aliquam mattis tincidunt nibh nec consectetur. Sed malesuada sodales felis, ut iaculis tortor finibus eget. Suspendisse auctor magna leo, vehicula ultrices lectus tincidunt et.</p>
             </div>
         </div>
@@ -67,24 +67,6 @@
 
 </div>
 
-<div class="container-fluid  home2">
-  
-    <div class="container set1">
-      <div class="row " >
-        <div class="row p-5 justify-content-center align-items-center " style=" height:max-content;">
-            <div class="col-12 col-lg-6">
-                <img src="" class="rounded mx-auto d-block" alt="...">
-            </div>
-            <div class="col-12 col-lg-5">
-                <h2>DOCTOR</h2>
-                <h3>Dr. Name Here</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque posuere tellus, in vulputate odio blandit vitae. Aliquam vehicula risus ut ante rhoncus faucibus. Mauris massa metus, facilisis congue hendrerit et, vulputate id elit. Donec a turpis sit amet libero eleifend rhoncus. Aliquam mattis tincidunt nibh nec consectetur. Sed malesuada sodales felis, ut iaculis tortor finibus eget. Suspendisse auctor magna leo, vehicula ultrices lectus tincidunt et.</p>
-            </div>
-        </div>
-      </div>
-    </div>
-
-</div>
 
    
   <!--footer--> 
