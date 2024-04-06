@@ -1,4 +1,4 @@
-<footer class="text-center text-lg-start  text-white" style="background-color: #001b0f;">
+<footer class="text-center text-lg-start  text-white">
 
 <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom">
 
@@ -9,7 +9,7 @@
   <div class="container text-center text-md-start mt-5  text-white">
     <div class="row mt-3">
       <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-      <img  src="../Assets/Logo02.png" alt="" style=" height:4vw;margin-left:" >
+      <img  src="../Assets/Logo02.png" alt="" style=" height:4vw;" >
         <p>
         Immerse yourself in luxury amidst nature at Nature Life Eco Resort. Offering breathtaking views, a private pool, and exquisite interiors, this villa is a sanctuary of peace and elegance. Perfect for serene family holidays or intimate escapes.
         </p>
