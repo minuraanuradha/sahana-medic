@@ -1,79 +1,66 @@
-
-.home
+*
 {
-    /*background-image: url("../Assets/01rgb.png");*/
-    background-size: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #dbfff220;
+}
+
+.home /* first navi bar and display set */
+{
     height: 100vh;
-    padding: 0 50px 0 50px;
+    padding: 0 80px 0 80px;
+    /*padding: 0 80px 0 80px;*/
 }
 .sm_navi
 {
     background-color: #007e522b;
     border-radius: 25px;
-    color: #004013;
-    font-weight: 600;
     height: 40px;
+    font-size: 15px;
+    font-weight: 500;
 }
 .nav-item a 
 {
     color: #004013;
-    font-size: 15px;
-    font-weight: 500;
+    border-radius: 25px;
 }
 .nav-item a:hover
 {
     color: #ffffff;
-    font-size: 15px;
-    font-weight: 500;
     background-color: #004c3183;
     border-radius: 25px;
 }
-.active
-{
-    background-color: #004c31b4;
-    border-radius: 25px;
-    color: #ffffff;
-    font-weight: 600;
-}
 .nav-item a.active 
 {
+    color: #ffffff;
     background-color: #004c31b4;
     border-radius: 25px;
-    color: #ffffff;
-    font-weight: 600;
 }
 .btn02
 {
-    background-color:#ffffff ;
-    border-color: #004c32;
-    width: 10%;
+    background-color: #004c3128;
+    color: #004013;
+    border-style:hidden;/*
+    border-width:medium;*/
+    border-radius: 25px;
     height: 40px;
-    border-radius: 20px;
-    font-size:1.2vw;
-    font-weight:500;
-    border-width: 3px;
-}
-.btn02:hover
-{
-    background-color:#004c32 ;
-    border-style:solid;
-    scale: 1.01;
-    color: #ffffff;
-}
-.btn02 a
-{
-    color: #004c32;
-    text-decoration: none;
+    width: 100px;
     font-size: 15px;
     font-weight: 500;
 }
-.btn02 a:hover
-{
+.btn02:hover
+{   
+    background-color: #004c31cc;
     color: #ffffff;
 }
 
+
 /*-------------------------set01---------------------*/
-.set_main
+.home_main
 {
     background-color: #6a6a6a;
     background-size: cover;
@@ -84,15 +71,6 @@
     padding-top: 3vw;
     padding-left: 6vw;
 }
-/*.set_mini
-{
-    background-color: #ffffff31;
-    border-radius: 25px 0 0 25px;
-    height: 100%;
-    backdrop-filter: blur( 1px );
-    -webkit-backdrop-filter: blur( 1px );
-}*/
-
 .topic1{
     
     margin-top: 8%;
@@ -101,6 +79,7 @@
     font-size: 3vw;
     color: #ffffff;
     text-shadow: 5px 5px 20px black;
+    margin-left: 10px;
 }
 .topic2{
     font-weight: bolder;
@@ -112,38 +91,35 @@
 .sub_topic
 {
     color: #ffffff;
-    margin-top: -30px;
+    margin-left: 12px;
 }
-.btn_ap
+.btn01
 {
     margin-top: 20px;
     background-color:#ffffff ;
     color: #004013;
     width: 20vw;
-    height: 60px;
+    height: 50px;
     border-radius: 40px;
     font-size:1.2vw;
     font-weight:500;
     border-width: 3px;
-}
-.btn_ap:hover
-{
-    
-    background-color:#004013 ;
-    border-style:solid;
-    border-color: #1270B0;
-    scale: 1.01;
-    color: white;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-left: 15px;
 }
-.btn_ap a
+.btn01:hover
 {
-    color: #004013;
-    text-decoration: none;
+    
+    background-color:#17602d ;
+    color: #ffffff;
+    border-style:solid;
+    scale: 1.01;
+    color: 004013;
 }
+
 
 /*---------------------------about us-----------*/
 .home1

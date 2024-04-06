@@ -20,8 +20,9 @@
                         </li>
                       </ul>
                       
+                      
                   </div>
-                  
+                  <button class="btn02" type="submit" style="margin-right:40px"><a href="../Controllers/userLogout.php" >Logout</a></button>
                 <!-- Example single danger button -->
             <div class="btn-group">
                 <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

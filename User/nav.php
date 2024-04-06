@@ -1,5 +1,5 @@
 <div class="row" >
-            <nav class="navbar navbar-expand-md -tertiary cnav " style="background-color: #ffffff;">
+            <nav class="navbar navbar-expand-md -tertiary cnav " style="background-color: #;padding-top:20px;padding-bottom:20px">
                 <div class="container-fluid " >
                   <a class="navbar-brand" href="#"><h4 style="font-weight: bolder;"></h4>
                     <img  src="../Assets/Logo02.png" alt="" style=" height:3vw;margin-left:40px" >
@@ -23,8 +23,10 @@
                         </li>
                       </ul>
                   </div>
-                  <button class="btn02" type="submit" style="margin-right:40px"><a href="../Controllers/userLogout.php" >Logout</a></button>
-                  <button class="btn02" type="submit" style="margin-right:40px"><a href="" >Profile</a></button>
+                  <!--<button  type="submit" style="margin-right:10px"><a class="btn02" href="../Controllers/userLogout.php" >Logout</a></button> -->
+                  <a  href="./userProfile.php" ><button class="btn02"  type="submit" style="margin-right:40px" >Profile</button>  </a> 
+                  
+                  
                 </div>
             </nav>
 </div>
