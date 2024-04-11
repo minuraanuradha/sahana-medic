@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,25 +8,19 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./Chatbot2/style.css">
-  <script src="./Chatbot2/script.js" defer></script>
 
+  <script src="./Chatbot2/script.js" defer></script>
 
   <title>index</title>
 </head>
 
 <body>
-  <div class="container-fluid  home">
 
+  <div class="container-fluid  home">
     <!--Nav-->
     <div class="col-12 ">
       <?php
       include "nav.php";
-      ?>
-    </div>
-    
-    <div>
-      <?php
-      include "./Chatbot2/index.php";
       ?>
     </div>
 
@@ -36,14 +28,14 @@
     <div class="row ">
       <div class="container ">
         <div class="row ">
-          <div class="col-12 col-md-12 set_main d-flex ">
+          <div class="col-12 col-md-12 home_main d-flex ">
             <div class="col-12 col-md-6 set_mini justify-content-center align-iteam-center">
               <h1 class="topic1 text-start">Take Care of your</h1>
               <h1 class="topic2 text-start"> HEALTH </h1>
               <p class="sub_topic text-start">Empowering Health, Enriching Lives</p>
               <div class="row ">
-                <button class="btn_ap" data-bs-toggle="modal" data-bs-target="#appointmentModal" type="submit">Add Appoinments</button>
-                <button class="btn_ap" data-bs-toggle="modal" data-bs-target="#reviewModal" type="button">Add Review</button>
+                <button class="btn01" data-bs-toggle="modal" data-bs-target="#appointmentModal" type="submit">Add Appoinments</button>
+                <button class="btn01" data-bs-toggle="modal" data-bs-target="#reviewModal" type="button">Add Review</button>
 
                 <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog">
@@ -52,6 +44,7 @@
                         <h5 class="modal-title" id="exampleModalLabel">Add Appointment</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
+
                       <div class="modal-body">
                         <!-- Appointment form -->
                         <form id="appointmentForm" method="post" action="../Controllers/add_appointment.php">
@@ -136,17 +129,19 @@
         </div>
       </div>
     </div>
+
   </div>
   </div>
   </div>
 
 
   <!--footer-->
-  <div class="col-12 mt-3 bg-success">
+  <div class="col-12 mt-3 "style="background-color:#011a0e">
     <?php
     include "footer.php";
     ?>
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
   <script>

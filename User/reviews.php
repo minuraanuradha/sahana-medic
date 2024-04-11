@@ -15,47 +15,107 @@ $result = $conn->query($sql);
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reviews</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
   <link rel="stylesheet" href="./css/style.css">
 
   <style>
     .card {
-      margin-bottom: 20px;
+      border-radius: 25px;
+      border:none;
+      padding-bottom: 20px;
     }
     .card-body {
-      background-color: #C9E5CB;  
+      border-radius: 25px;
+      height:350px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     }
     .card-body:hover {
-      background-color: #C9E5CB; 
-      transform:  scale(1.05); 
-      transition: transform 0.3s ease-in-out;
+      background-color: #; 
+      transform:  scale(1.01); 
+      transition: transform 0.4s ease-in-out;
     }
     .card-title {
-      color: #006400; 
+      text-align:right;
+      color: #01351b; 
+      padding-top: 5px;
+      text-transform: uppercase;
     }
     .card-text {
-      color: #006400;  
+      padding: 8px 8px 0 8px;
+      color: #01351b; 
+      font-size:15px;
+    }
+    .card-sub-text{
+      padding: 8px;
+      color: #01351b; 
+      font-size:13px;
     }
   </style>
 </head>
 <body>
 
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-12">
-      <?php include "nav.php"; ?>
-    </div>
+<div class="container-fluid  abouthome">
+
+  <!--Nav--> 
+  <div class="row" >
+            <nav class="navbar navbar-expand-md -tertiary cnav " style="background-color: #;padding-top:20px;padding-bottom:20px">
+                <div class="container-fluid " >
+                  <a class="navbar-brand" href="#"><h4 style="font-weight: bolder;"></h4>
+                    <img  src="../Assets/Logo02.png" alt="" style=" height:3vw;margin-left:40px" >
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class=" navbar-collapse justify-content-center " id="navbarTogglerDemo02" >
+                    <ul class="nav justify-content-center sm_navi">
+                        <li class="nav-item">
+                          <a class="nav-link " href="index.php">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link " href="aboutUs.php" >About Us</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="blog.php">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="reviews.php">Reviews</a>
+                        </li>
+                      </ul>
+                  </div>
+                  <!--<button  type="submit" style="margin-right:10px"><a class="btn02" href="../Controllers/userLogout.php" >Logout</a></button> -->
+                  <a  href="./userProfile.php" ><button class="btn02"  type="submit" style="margin-right:40px" >Profile</button>  </a> 
+                </div>
+            </nav>
   </div>
-  <h1 class="text-center mb-4" style="color: #004c32;">Reviews</h1>
+
+  <!--Page Contents-->      
+    <div class="row  ">
+    <div class="container settopic">
+            <div class="row " >
+                <div class="row col-12 p-4 justify-content-center align-items-center " style=" height:max-content;">
+                <div class="col-12 text-center">
+                        <h1 class="mb-3 topic3">CUSTOMER REVIEWS</h1>
+                        <p class="para">At Sahana Medical Center, we are dedicated to providing comprehensive and compassionate healthcare services to our community. With a team of highly skilled healthcare .</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="container-fluid " style="padding: 0 70px 0px 70px;" >
   <div class="row">
     <?php if ($result->num_rows > 0): ?>
       <?php while ($row = $result->fetch_assoc()): ?>
         <div class="col-md-4">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title"><?php echo $row["name"]; ?></h5>
-              <p class="card-text">Rating: <?php echo $row["rating"]; ?>/5</p>
-              <p class="card-text"><?php echo $row["message"]; ?></p>
-              <p class="card-text"><small class="text-muted">Created at: <?php echo $row["created_at"]; ?></small></p>
+              <h4 class="card-title text-center"><?php echo $row["name"]; ?>  </h4>
+              <h4 class="card-text  text-center"> <?php echo $row["rating"]; ?>.0 <i class="fas fa-star"></i></h4>
+              <p class="card-text text-center">"<?php echo $row["message"]; ?>"</p>
+              <p class="card-sub-text text-center"><small class="text-muted">Created at: <?php echo $row["created_at"]; ?></small></p>
             </div>
           </div>
         </div>
@@ -69,7 +129,9 @@ $result = $conn->query($sql);
     <?php endif; ?>
   </div>
 </div>
-<div class="col-12 mt-3 bg-success">
+
+
+<div class="col-12 mt-3  " style="background-color:#011a0e">
     <?php
     include "footer.php";
     ?>

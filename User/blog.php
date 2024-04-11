@@ -11,66 +11,60 @@
 </head>
 <body>
 
-<div class="container-fluid  home1">
+<div class="container-fluid  abouthome">
 
   <!--Nav--> 
-  <div class="col-12 ">
-    <div class="row" >
-    <nav class="navbar navbar-expand-md -tertiary cnav " style="background-color: #;">
-        <div class="container-fluid " >
-
-          <a class="navbar-brand" href="#"><h4 style="font-weight: bolder;"></h4>
-              <img  src="../Assets/Logo02.png" alt="" style=" height:3vw;margin-left:40px" >
-          </a>
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class=" navbar-collapse justify-content-center " id="navbarTogglerDemo02" >
-              <ul class="nav justify-content-center sm_navi">
-                <li class="nav-item">
-                  <a class="nav-link " href="index.php">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="aboutUs.php" >About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contactUs.php">Contac Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="blog.php">Blogs</a>
-                </li>
-              </ul>
-          </div>
-
-          <button class="btn02" type="submit" style="margin-right:40px"><a href="Login.php" >Profile</a></button>
-
-        </div>
-    </nav>
-    </div>
-  </div>  
-
-  <!--Page Contents-->      
-  <div class="row  ">
-    <div class="container settopic">
-      <div class="row " >
-        <div class="row col-12 p-5 justify-content-center align-items-center " style=" height:max-content;">
-            <div class="col-12 text-center">
-                <h1 class="mb-3 topic3">BLOGS</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque posuere tellus, in vulputate odio blandit vitae. Aliquam vehicula risus ut ante rhoncus faucibus. Mauris massa metus, facilisis congue hendrerit et, vulputate id elit. Donec a turpis sit amet libero eleifend rhoncus. Aliquam mattis tincidunt nibh nec consectetur. Sed malesuada sodales felis, ut iaculis tortor finibus eget. Suspendisse auctor magna leo, vehicula ultrices lectus tincidunt et.</p>
-            </div>
-        </div>
-      </div>
-    </div>
+  <div class="row" >
+            <nav class="navbar navbar-expand-md -tertiary cnav " style="background-color: #;padding-top:20px;padding-bottom:20px">
+                <div class="container-fluid " >
+                  <a class="navbar-brand" href="#"><h4 style="font-weight: bolder;"></h4>
+                    <img  src="../Assets/Logo02.png" alt="" style=" height:3vw;margin-left:40px" >
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class=" navbar-collapse justify-content-center " id="navbarTogglerDemo02" >
+                    <ul class="nav justify-content-center sm_navi">
+                        <li class="nav-item">
+                          <a class="nav-link " href="index.php">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link " href="aboutUs.php" >About Us</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="reviews.php">Reviews</a>
+                        </li>
+                      </ul>
+                  </div>
+                  <!--<button  type="submit" style="margin-right:10px"><a class="btn02" href="../Controllers/userLogout.php" >Logout</a></button> -->
+                  <a  href="./userProfile.php" ><button class="btn02"  type="submit" style="margin-right:40px" >Profile</button>  </a> 
+                </div>
+            </nav>
   </div>
 
+  <!--Page Contents-->      
+    <div class="row  ">
+    <div class="container settopicb">
+            <div class="row " >
+                <div class="row col-12 p-4 justify-content-center align-items-center " style=" height:max-content;">
+                <div class="col-12 text-center">
+                        <h1 class="mb-3 topic3">BLOGS</h1>
+                        <p class="para">At Sahana Medical Center, we are dedicated to providing comprehensive and compassionate healthcare services to our community. With a team of highly skilled healthcare .</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </div>
 
 
    
   <!--footer--> 
-  <div class="col-12 mt-3 bg-success">
+  <div class="col-12 mt-3 " style="background-color:#011a0e">
         <?php
         include "footer.php";
         ?>
