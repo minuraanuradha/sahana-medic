@@ -1,9 +1,7 @@
-<?php 
-session_start();
-
-if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
-
- ?>
+<?php
+    session_start();
+    require 'db_conn.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,23 +13,23 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Riverston Life - Admin</title>
+    <title>Admin Dashboard - Employee </title>
 
     <!-- Custom fonts for this template-->
-    <link href="assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
-<body id="page-top">
+<body id="page-top" >
 
     <!-- Page Wrapper -->
     <div id="wrapper" >
 
-        <?php include 'header.php'; ?>
+        <?php include 'emp_header.php'; ?>
         
 
         <!-- Content Wrapper -->
@@ -61,7 +59,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                     </form>
 
                     <!-- Topbar Navbar -->
-                    <ul class="navbar-nav ml-auto style="  ">
+                    <ul class="navbar-nav ml-auto style="  >
 
                         <!-- Nav Item - Search Dropdown (Visible Only XS) -->
                         <li class="nav-item dropdown no-arrow d-sm-none">
@@ -123,15 +121,15 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Doctor Dashboard</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm shadow-sm" style="background-color: #0075423c; color:black;"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
-                    </div>
+                        <h1 class="h3 mb-0 text-gray-800">Employee Manage</h1>
+                        <a href="emp-create.php" class="btn btn-success float-end " > Add Employee </a>
+                    </div> 
 
                     <!-- Content Row -->
-                    <div class="row">
+                <!--    <div class="row"> -->
 
                         <!--  () Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4" >
+                <!--        <div class="col-xl-3 col-md-6 mb-4" >
                             <div class="card border-left-success shadow h-100 py-2" >
                                 <div class="card-body" >
                                     <div class="row no-gutters align-items-center">
@@ -149,8 +147,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                             </div>
                         </div>
 
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
+                         Earnings (Monthly) Card Example -->
+                    <!--    <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-success shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -165,10 +163,10 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
+                    <!--    <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-success shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -189,8 +187,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                             </div>
                         </div>
 
-                        <!-- Pending Requests Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
+                        Pending Requests Card Example -->
+                <!--        <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-success shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -206,47 +204,85 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
                     <!-- Content Row -->
 
+
                     <div class="row">
+                    <?php include('emp_message.php'); ?>
 
                         <!-- Area Chart -->
-                        <div class="col-xl-8 col-lg-7">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-truncate">Today Appoinments </h6>
-                                    <div class="dropdown no-arrow">
-                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                                            <div class="dropdown-header">Dropdown Header:</div>
-                                            <a class="dropdown-item" href="#">Add</a>
-                                            <a class="dropdown-item" href="#">Edit</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Close</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-area">
-                                        <canvas id="myAreaChart"></canvas>
-                                    </div>
-                                </div>
+                        <div class="col-md-12 col-lg-12">
+                        <div class="card">
+                        <div class="card-header">
+                        <h4>Employee Edit 
+                            <a href="emp_index.php" class="btn btn-danger float-end">BACK</a>
+                        </h4>
+                    </div>
+                    <div class="card-body">
 
-                            </div>
-                        </div>
+                        <?php
+                        if(isset($_GET['employee_id']))
+                        {
+                            $employee_id = mysqli_real_escape_string($con, $_GET['employee_id']);
+                            $query = "SELECT * FROM employee WHERE employee_id='$employee_id' ";
+                            $query_run = mysqli_query($con, $query);
+
+                            if(mysqli_num_rows($query_run) > 0)
+                            {
+                                $employee = mysqli_fetch_array($query_run);
+                                ?>
+                                <form action="emp_handle.php" method="POST">
+                                    <input type="hidden" name="employee_id" value="<?= $employee['employee_id']; ?>">
+
+                                    <div class="mb-3">
+                                        <label>Employee Name</label>
+                                        <input type="text" name="name" value="<?=$employee['full_name'];?>" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label>Employee Email</label>
+                                        <input type="email" name="email" value="<?=$employee['email'];?>" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label>Employee Password</label>
+                                        <input type="text" name="password" value="<?=$employee['password'];?>" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label>Employee Address</label>
+                                        <input type="text" name="address" value="<?=$employee['address'];?>" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label>Employee Birth Day</label>
+                                        <input type="text" name="bday" value="<?=$employee['date_of_birth'];?>" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <button type="submit" name="update_emp" class="btn btn-primary">
+                                            Update Employee
+                                        </button>
+                                    </div>
+
+                                </form>
+                                <?php
+                            }
+                            else
+                            {
+                                echo "<h4>No Such Id Found</h4>";
+                            }
+                        }
+                        ?>
+                    </div>
+
+                    </div>
+                </div>
+                        </div> 
 
                         <!-- Pie Chart -->
-                        <div class="col-xl-4 col-lg-5">
+                    <!--    <div class="col-xl-4 col-lg-5">
                             <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                 Card Header - Dropdown -->
+                    <!--            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 class="m-0 font-weight-bold text-truncate">Revenue Contribution</h6>
                                     <div class="dropdown no-arrow">
                                         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -280,7 +316,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Content Row -->
                     <div class="row">
@@ -374,28 +410,22 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="assets/jquery/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/jquery/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="assets/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../assets/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+    <script src="../js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="assets/chart.js/Chart.min.js"></script>
+    <script src="../assets/chart.js/Chart.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="../js/demo/chart-area-demo.js"></script>
+    <script src="../js/demo/chart-pie-demo.js"></script>
 
 </body>
 
 </html>
-<?php 
-}else{
-     header("Location: index.php");
-     exit();
-}
- ?>

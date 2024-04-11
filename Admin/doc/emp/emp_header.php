@@ -3,14 +3,14 @@
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center my-4" href="index.php">
-                <h2 style="font-size: 24px; font-weight:900;"> <img src="./img/Logo04white.png" alt="" style="width:110px"> </h2>
+                <h2 style="font-size: 24px; font-weight:900;"> <img src="../img/Logo04white.png" alt="" style="width:110px"> </h2>
         </a>
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active mt-1">
+            <li class="nav-item  mt-1">
                 <a class="nav-link" href=".php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
@@ -34,13 +34,13 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="allPackages.php">View Employee</a>
-                        <a class="collapse-item" href="addPackages.php">Add Employee</a>
+                        <a class="collapse-item" href="allPackages.php">View </a>
+                        <a class="collapse-item" href="addPackages.php">Add </a>
                     </div>
                 </div>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseadmin"
                     aria-expanded="true" aria-controls="collapseadmin">
                     <i class="fas fa-fw fa-user-shield"></i>
@@ -49,7 +49,7 @@
                 <div id="collapseadmin" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="allPackages.php">View Employee</a>
+                        <a class="collapse-item" href="./emp/emp_index.php">View Empl</a>
                         <a class="collapse-item" href="addPackages.php">Add Employee</a>
                     </div>
                 </div>

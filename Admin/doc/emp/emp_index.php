@@ -1,4 +1,7 @@
-
+<?php
+    session_start();
+    require 'db_conn.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,26 +13,25 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link rel="icon" type="image/x-icon" href="./img/Logo03.png">
-
-    <title>Sahana Medical|Doctor Dashboard</title>
+    <title>Admin Dashboard - Employee </title>
 
     <!-- Custom fonts for this template-->
-    <link href="./assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="./css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
-<body id="page-top">
+<body id="page-top" >
 
     <!-- Page Wrapper -->
     <div id="wrapper" >
 
         <?php include 'doc_dashboardHeader.php'; ?>
         
+
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
@@ -57,7 +59,7 @@
                     </form>
 
                     <!-- Topbar Navbar -->
-                    <ul class="navbar-nav ml-auto style=" >
+                    <ul class="navbar-nav ml-auto style="  >
 
                         <!-- Nav Item - Search Dropdown (Visible Only XS) -->
                         <li class="nav-item dropdown no-arrow d-sm-none">
@@ -84,11 +86,15 @@
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-900 small">Doctor </span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Doctor</span>
                                 <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
                                 <a class="dropdown-item" href="#">
                                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Settings
@@ -110,126 +116,168 @@
                 </nav>
                 <!-- End of Topbar -->
 
-                <!-- Begin Page Content -------------------------->
+                <!-- Begin Page Content -->
                 <div class="container-fluid " >
 
-                    <!-------------- Page Heading and button    -->
+                    <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Doctor Dashboard</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm shadow-sm" style="background-color: #0075423c; color:black;"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
-                    </div>
+                        <h1 class="h3 mb-0 text-gray-800">Employee Manage</h1>
+                        <a href="emp-create.php" class="btn btn-success float-end " > Add Employee </a>
+                    </div> 
 
-                    <!-------------- Content Row 01 -------------->
-                    <div class="row" style="height:110px;">
+                    <!-- Content Row -->
+                <!--    <div class="row"> -->
 
-                        <!--  Total Users -->
-                        <div class="col-xl-3 col-md-6 mb-5" >
+                        <!--  () Card Example -->
+                <!--        <div class="col-xl-3 col-md-6 mb-4" >
                             <div class="card border-left-success shadow h-100 py-2" >
                                 <div class="card-body" >
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1"></div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">Total Patients</div>
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                Total Patients</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">125</div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas  fa-2x text-success">45</i>
+                                            <i class="fas  fa-2x text-gray-300"></i>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Total Employees -->
-                        <div class="col-xl-3 col-md-6 mb-5">
+                         Earnings (Monthly) Card Example -->
+                    <!--    <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-success shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1"></div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">Total Employees</div>
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                Total Employees</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">4</div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas  fa-2x text-success">02</i>
+                                            <i class="fas  fa-2x text-gray-300"></i>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
-                        <!-- Total Appoinments -->
-                        <div class="col-xl-3 col-md-6 mb-5">
+                        <!-- Earnings (Monthly) Card Example -->
+                    <!--    <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-success shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1"> </div>
-                                            <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">Total Appoinments</div>
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Total Appoinments
+                                            </div>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">24</div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas  fa-2x text-success">15</i>
+                                            <i class="fas  fa-2x text-gray-300"></i>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Pending Requests Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-5">
+                        Pending Requests Card Example -->
+                <!--        <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-success shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1"></div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">Appoinments</div>
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                Canceled Appoinments</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">5</div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas  fa-2x text-success">01</i>
+                                            <i class="fas  fa-2x text-gray-300"></i>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
-                    <!-------------- Content Row 02 -------------->
+                    <!-- Content Row -->
+
 
                     <div class="row">
+                    <?php include('emp_message.php'); ?>
 
                         <!-- Area Chart -->
-                        <div class="col-xl-8 col-lg-7">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-truncate">Today Appoinments </h6>
-                                    <div class="dropdown no-arrow">
-                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                                            <div class="dropdown-header">Dropdown Header:</div>
-                                            <a class="dropdown-item" href="#">Add</a>
-                                            <a class="dropdown-item" href="#">Edit</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Close</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-area">
-                                        <canvas id="myAreaChart"></canvas>
-                                    </div>
-                                </div>
+                        <div class="col-md-12 col-lg-12">
+                        <div class="card">
+                    <div class="card-header " style="background-color: #83ffa999;">
+                    </div>
+                    <div class="card-body" style="background-color: #ffffff;" >
 
-                            </div>
-                        </div>
+                        <table class="table table-bordered table-striped" >
+                            <thead>
+                                <tr>
+                                    <th>Employee ID</th>
+                                    <th>Employee Name</th>
+                                    <th>Email</th>
+                                    <th>Password</th>
+                                    <th>Address</th>
+                                    <th>Birth Day</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php 
+                                    $query = "SELECT * FROM employee";
+                                    $query_run = mysqli_query($con, $query);
+
+                                    if(mysqli_num_rows($query_run) > 0)
+                                    {
+                                        foreach($query_run as $emp)
+                                        {
+                                            ?>
+                                            <tr>
+                                                <td><?= $emp['employee_id']; ?></td>
+                                                <td><?= $emp['full_name']; ?></td>
+                                                <td><?= $emp['email']; ?></td>
+                                                <td><?= $emp['password']; ?></td>
+                                                <td><?= $emp['address']; ?></td>
+                                                <td><?= $emp['date_of_birth']; ?></td>
+                                                <td>
+                                                    <a href="emp-view.php?id=<?= $emp['employee_id']; ?>" class="btn btn-info btn-sm">View</a>
+                                                    <a href="emp-edit.php?id=<?= $emp['employee_id']; ?>" class="btn btn-success btn-sm">Edit</a>
+                                                    <form action="emp_handle.php" method="POST" class="d-inline">
+                                                        <button type="submit" name="delete_emp" value="<?=$emp['employee_id'];?>" class="btn btn-danger btn-sm">Delete</button>
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                            <?php
+                                        }
+                                    }
+                                    else
+                                    {
+                                        echo "<h5> No Record Found </h5>";
+                                    }
+                                ?>
+                                
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+                        </div> 
 
                         <!-- Pie Chart -->
-                        <div class="col-xl-4 col-lg-5">
+                    <!--    <div class="col-xl-4 col-lg-5">
                             <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                 Card Header - Dropdown -->
+                    <!--            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 class="m-0 font-weight-bold text-truncate">Revenue Contribution</h6>
                                     <div class="dropdown no-arrow">
                                         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -263,10 +311,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <!-------------- Content Row 03 (didnt use this page) -------------->
-
+                    <!-- Content Row -->
                     <div class="row">
 
                         <!-- Content Column -->
@@ -312,7 +359,7 @@
                     </div>
 
                 </div>
-                <!-- end of Begin Page container-fluid -->
+                <!-- /.container-fluid -->
 
             </div>
             <!-- End of Main Content -->
@@ -332,12 +379,11 @@
 
     </div>
     <!-- End of Page Wrapper -->
-<!---------------------------------------------------------------------------------------->
+
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
-
 
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -358,23 +404,22 @@
         </div>
     </div>
 
-
     <!-- Bootstrap core JavaScript-->
-    <script src="./assets/jquery/jquery.min.js"></script>
-    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/jquery/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="./assets/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../assets/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="./js/sb-admin-2.min.js"></script>
+    <script src="../js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="./assets/chart.js/Chart.min.js"></script>
+    <script src="../assets/chart.js/Chart.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="./js/demo/chart-area-demo.js"></script>
-    <script src="./js/demo/chart-pie-demo.js"></script>
+    <script src="../js/demo/chart-area-demo.js"></script>
+    <script src="../js/demo/chart-pie-demo.js"></script>
 
 </body>
 
