@@ -136,7 +136,7 @@
 
 
   <!--footer-->
-  <div class="col-12 mt-3 bg-success">
+  <div class="col-12 mt-3 "style="background-color:#011a0e">
     <?php
     include "footer.php";
     ?>

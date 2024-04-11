@@ -10,13 +10,13 @@
                   <div class=" navbar-collapse justify-content-center " id="navbarTogglerDemo02" >
                     <ul class="nav justify-content-center sm_navi">
                         <li class="nav-item">
-                          <a class="nav-link active" href="index.php">Home</a>
+                          <a class="nav-link active " href="index.php">Home</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link " href="aboutUs.php" >About Us</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Blogs</a>
+                          <a class="nav-link" href="blog.php">Blogs</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="reviews.php">Reviews</a>

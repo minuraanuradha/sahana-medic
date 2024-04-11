@@ -11,12 +11,11 @@
 </head>
 <body>
 
-<div class="container-fluid  home1">
+<div class="container-fluid  abouthome">
 
   <!--Nav--> 
-    <div class="col-12 ">
-      <div class="row" >
-            <nav class="navbar navbar-expand-md -tertiary cnav " style="background-color: #ffffff;">
+  <div class="row" >
+            <nav class="navbar navbar-expand-md -tertiary cnav " style="background-color: #;padding-top:20px;padding-bottom:20px">
                 <div class="container-fluid " >
                   <a class="navbar-brand" href="#"><h4 style="font-weight: bolder;"></h4>
                     <img  src="../Assets/Logo02.png" alt="" style=" height:3vw;margin-left:40px" >
@@ -33,74 +32,55 @@
                           <a class="nav-link active" href="aboutUs.php" >About Us</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Blogs</a>
+                          <a class="nav-link" href="blog.php">Blogs</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="reviews.php">Reviews</a>
                         </li>
                       </ul>
                   </div>
-                  <button class="btn02" type="submit" style="margin-right:40px"><a href="Login.php" >Profile</a></button>
+                  <!--<button  type="submit" style="margin-right:10px"><a class="btn02" href="../Controllers/userLogout.php" >Logout</a></button> -->
+                  <a  href="./userProfile.php" ><button class="btn02"  type="submit" style="margin-right:40px" >Profile</button>  </a> 
                 </div>
             </nav>
-      </div>
-    </div>  
+  </div>
 
   <!--Page Contents-->      
     <div class="row  ">
     <div class="container settopic">
             <div class="row " >
-                <div class="row col-12 p-5 justify-content-center align-items-center " style=" height:max-content;">
+                <div class="row col-12 p-4 justify-content-center align-items-center " style=" height:max-content;">
                 <div class="col-12 text-center">
                         <h1 class="mb-3 topic3">ABOUT US</h1>
-                        <p>At Sahana Medical Center, we are dedicated to providing comprehensive and compassionate healthcare services to our community. With a team of highly skilled healthcare professionals and state-of-the-art facilities, we strive to deliver personalized care tailored to the unique needs of each patient. Our commitment to excellence extends beyond medical treatment; we prioritize patient comfort, safety, and well-being at every step. From preventive care and diagnostics to advanced treatments and rehabilitation, we are here to support our patients on their journey to better health. With a focus on innovation, integrity, and empathy, Sahana Medical Center is your trusted partner in healthcare.</p>
+                        <p class="para">At Sahana Medical Center, we are dedicated to providing comprehensive and compassionate healthcare services to our community. With a team of highly skilled healthcare .</p>
                     </div>
                 </div>
             </div>
         </div>
-        
-
     </div>
-</div>
-<div class="container-fluid  home2">
-  
-  <div class="container set1">
-      <div class="row " >
-          <div class="row p-5 justify-content-center align-items-center " style=" height:max-content;">
-              <div class="col-12 col-lg-6">
-              <img src="" class="rounded mx-auto d-block" alt="...">
-              </div>
-              <div class="col-12 col-lg-5">
-                  <h2>DOCTOR</h2>
-                  <h3>Dr. Name Here</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque posuere tellus, in vulputate odio blandit vitae. Aliquam vehicula risus ut ante rhoncus faucibus. Mauris massa metus, facilisis congue hendrerit et, vulputate id elit. Donec a turpis sit amet libero eleifend rhoncus. Aliquam mattis tincidunt nibh nec consectetur. Sed malesuada sodales felis, ut iaculis tortor finibus eget. Suspendisse auctor magna leo, vehicula ultrices lectus tincidunt et.</p>
-              </div>
-          </div>
-      </div>
-  </div>
-</div>
-<div class="container-fluid  home2">
 
-  <div class="container set1">
-      <div class="row " >
-          <div class="row p-5 justify-content-center align-items-center " style=" height:max-content;">
-          <div class="col-12 col-lg-5">
-                  <h2>DOCTOR</h2>
-                  <h3>Dr. Name Here</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque posuere tellus, in vulputate odio blandit vitae. Aliquam vehicula risus ut ante rhoncus faucibus. Mauris massa metus, facilisis congue hendrerit et, vulputate id elit. Donec a turpis sit amet libero eleifend rhoncus. Aliquam mattis tincidunt nibh nec consectetur. Sed malesuada sodales felis, ut iaculis tortor finibus eget. Suspendisse auctor magna leo, vehicula ultrices lectus tincidunt et.</p>
-              </div>    
-          <div class="col-12 col-lg-6">
-              <img src="" class="rounded mx-auto d-block" alt="...">
-              </div>
-              
-          </div>
-      </div>
-  </div>
-</div>   
+</div>
+
+<div class="container-fluid  sub">
+
+  <!--Page Contents-->      
+    <div class="row  ">
+    <div class="container subcontent">
+            <div class="row " >
+                    <div class="col-12 col-md-5">1</div>
+                    <div class="col-12 col-md-7">
+                        <h1 class="mb-3 topic4">ABOUT US</h1>
+                        <p class="para">At Sahana Medical Center, we are dedicated to providing comprehensive and compassionate healthcare services to our community. With a team of highly skilled healthcare .</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</div>
    
 
   <!--footer--> 
-  <div class="col-12 mt-3 bg-success">
+  <div class="col-12 mt-3 " style="background-color:#011a0e">
         <?php
         include "footer.php";
         ?>
