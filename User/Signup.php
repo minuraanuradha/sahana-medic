@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap-grid.rtl.min.css">
     <link rel="stylesheet" href="./css/form_style.css">
 
+    <link rel="icon" type="image/x-icon" href="./Assets/Logo03.png">
+
     <title>Admin Login</title>
 
 </head>

@@ -120,7 +120,7 @@
                     </div>
 
                     <!-------------- Content Row 01 -------------->
-                    <div class="row" style="height:110px;">
+                    <div class="row" style="height:;">
 
                         <!--  Total Users -->
                         <div class="col-xl-3 col-md-6 mb-5" >

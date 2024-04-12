@@ -135,8 +135,8 @@
                                 <!--new-->
                                     <div class="chart-area">
 
-                                        <table class="table table-bordered table-hovertable-striped">
-                                            <thead class="thead-sucess">
+                                        <table class="table table-bordered table-hover ">
+                                            <thead class="thead-dark">
                                                 <tr>
                                                     <th scope="col">Employee Name</th>
                                                     <th scope="col">Email</th>

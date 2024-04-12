@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./Chatbot2/style.css">
 
+  <link rel="icon" type="image/x-icon" href="./Assets/Logo03.png">
+
   <script src="./Chatbot2/script.js" defer></script>
 
   <title>index</title>

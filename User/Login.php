@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> 
     <link rel="stylesheet" href="./css/login_style.css">
 
+    <link rel="icon" type="image/x-icon" href="./Assets/Logo03.png">
+
     <title>User Login</title>
 
 </head>
