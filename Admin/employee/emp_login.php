@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="../../bootstrap/css/bootstrap-grid.rtl.min.css">
     <link rel="stylesheet" href="../employee/css/emp_Style.css">
 
+    <link rel="icon" type="image/x-icon" href="../doc/img/Logo03.png">
+
     <title>Admin Login</title>
 
 </head>
 
 <body>
-<form method="post" action="../Controllers/doc_loginhandler.php">
+<form method="post" action="../../Controllers/empLoginHandler.php">
 
 <div class="container-fluid d-flex align-items-center justify-content-center" style="height:100vh;" id="log-page">
     <div class="container col-11 col-md-6  " id="container-center" >
