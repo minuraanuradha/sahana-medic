@@ -28,7 +28,9 @@
     <!-- Page Wrapper -->
     <div id="wrapper" >
 
-        <?php include 'doc_dashboardHeader.php'; ?>
+        <?php 
+            include 'doc_dashboardHeader.php';
+        ?>
         
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -132,7 +134,20 @@
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">Total Patients</div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas  fa-2x text-success">45</i>
+                                            <i class="fas  fa-2x text-success">
+                                                <?php
+                                                    include '../../Model/connection.php';
+
+                                                    $sql = "SELECT * FROM user";
+                                                    $result = $conn->query($sql);
+
+                                                    if ($result->num_rows) {
+                                                        echo $result->num_rows; // Display the number of rows returned
+                                                    } else {
+                                                        echo "Error: " . $sql . "<br>" . $conn->error;
+                                                    }
+                                                ?>
+                                            </i>
                                         </div>
                                     </div>
                                 </div>
@@ -149,7 +164,20 @@
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">Total Employees</div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas  fa-2x text-success">02</i>
+                                            <i class="fas  fa-2x text-success">
+                                                <?php
+                                                    include '../../Model/connection.php';
+
+                                                    $sql = "SELECT * FROM employee";
+                                                    $result = $conn->query($sql);
+
+                                                    if ($result->num_rows) {
+                                                        echo $result->num_rows; // Display the number of rows returned
+                                                    } else {
+                                                        echo "Error: " . $sql . "<br>" . $conn->error;
+                                                    }
+                                                ?>
+                                            </i>
                                         </div>
                                     </div>
                                 </div>
@@ -166,7 +194,20 @@
                                             <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">Total Appoinments</div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas  fa-2x text-success">15</i>
+                                            <i class="fas  fa-2x text-success">
+                                                <?php
+                                                    include '../../Model/connection.php';
+
+                                                    $sql = "SELECT * FROM appointment";
+                                                    $result = $conn->query($sql);
+
+                                                    if ($result->num_rows) {
+                                                        echo $result->num_rows; // Display the number of rows returned
+                                                    } else {
+                                                        echo "Error: " . $sql . "<br>" . $conn->error;
+                                                    }
+                                                ?>
+                                            </i>
                                         </div>
                                     </div>
                                 </div>
@@ -180,10 +221,23 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1"></div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">Appoinments</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">Total Reviews</div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas  fa-2x text-success">01</i>
+                                            <i class="fas  fa-2x text-success">
+                                                <?php
+                                                    include '../../Model/connection.php';
+
+                                                    $sql = "SELECT * FROM reviews";
+                                                    $result = $conn->query($sql);
+
+                                                    if ($result->num_rows) {
+                                                        echo $result->num_rows; // Display the number of rows returned
+                                                    } else {
+                                                        echo "Error: " . $sql . "<br>" . $conn->error;
+                                                    }
+                                                ?>
+                                            </i>
                                         </div>
                                     </div>
                                 </div>

@@ -7,7 +7,9 @@
             exit();
 }
 
-$sql = "SELECT * FROM employee";
+
+
+$sql = "SELECT * FROM reviews";
 $result = $conn->query($sql);
 
                             
@@ -56,7 +58,7 @@ $conn->close();
                 </div>
             </li>
 
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseadmin"
                     aria-expanded="true" aria-controls="collapseadmin">
                     <i class="fas fa-fw fa-user-shield"></i>
@@ -105,7 +107,7 @@ $conn->close();
             </li>
 
                                     
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseadmi"
                     aria-expanded="true" aria-controls="collapseadmin">
                     <i class="fas fa-star"></i>

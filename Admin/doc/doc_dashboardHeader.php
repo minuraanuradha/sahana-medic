@@ -105,21 +105,19 @@ $conn->close();
             </li>
 
                                     
-            <!-- <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseadmin"
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseadmi"
                     aria-expanded="true" aria-controls="collapseadmin">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Manage Admin</span>
+                    <i class="fas fa-star"></i>
+                    <span>Rating</span>
                 </a>
-                <div id="collapseadmin" class="collapse" aria-labelledby="headingUtilities"
+                <div id="collapseadmi" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="addAdmin.php">Add User</a>
-                        <a class="collapse-item" href="admins.php">All Users</a>
+                        <a class="collapse-item" href="doc_ratingveiw.php">All Rating</a>
                     </div>
                 </div>
-            </li> -->
+            </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <!-- <li class="nav-item">
