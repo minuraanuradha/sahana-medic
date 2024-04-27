@@ -6,9 +6,10 @@ $servername = "localhost";
 $username = "root";
 $password = "";  
 $dbname = "sahana_medic";
+$port = 3377;
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
 
 // Check connection
 if ($conn->connect_error) {
