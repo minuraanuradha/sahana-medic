@@ -17,7 +17,7 @@ $stmt = $conn->prepare($sql);
 if ($stmt) {
     $stmt->bind_param("sssssss", $patientName, $symptom, $appointmentDate, $appointmentTime, $takingMedications, $medicationDetails, $contactNo);
     if ($stmt->execute()) {
-        header("Location: ../Admin/employee/emp_dashboard.php");
+        header("Location: ../Admin/employee/emp_apoinment.php");
         exit();
     } else {
         echo "Error executing statement: " . $stmt->error;

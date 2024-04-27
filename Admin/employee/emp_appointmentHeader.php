@@ -26,7 +26,7 @@ $conn->close();
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active mt-1">
+            <li class="nav-item  mt-1">
                 <a class="nav-link" href="emp_dashboard.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
@@ -41,7 +41,7 @@ $conn->close();
             </div>
 
             
-            <li class="nav-item ">
+            <li class="nav-item active">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
                     aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-clock"></i>
