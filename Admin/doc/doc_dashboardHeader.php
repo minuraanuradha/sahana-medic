@@ -50,8 +50,7 @@ $conn->close();
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="allPackages.php">View </a>
-                        <a class="collapse-item" href="addPackages.php">Add </a>
+                        <a class="collapse-item" href="doc_appointmentVeiw.php">View </a>
                     </div>
                 </div>
             </li>

@@ -42,7 +42,7 @@ $conn->close();
 
             
             <li class="nav-item ">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                <a class="nav-link collapsed" href="emp_apoinment" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
                     aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-clock"></i>
                     <span>Appoinments </span>
