@@ -6,6 +6,12 @@ include '../Model/connection.php';
 // Fetch reviews from the database
 $sql = "SELECT * FROM reviews";
 $result = $conn->query($sql);
+
+if(!isset($_SESSION['user_id'])) {
+  $profileButtonStyle = "display: none;";  
+} else {
+  $profileButtonStyle = "";  
+}
 ?>
 
 <!DOCTYPE html>
@@ -31,12 +37,10 @@ $result = $conn->query($sql);
     }
     .card-body {
       border-radius: 25px;
-      height:350px;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
     }
     .card-body:hover {
-      background-color: #; 
-      transform:  scale(1.01); 
+      transform:  scale(1.1); 
       transition: transform 0.4s ease-in-out;
     }
     .card-title {
@@ -63,7 +67,7 @@ $result = $conn->query($sql);
 
   <!--Nav--> 
   <div class="row" >
-            <nav class="navbar navbar-expand-md -tertiary cnav " style="background-color: #;padding-top:20px;padding-bottom:20px">
+            <nav class="navbar navbar-expand-md -tertiary cnav " style="padding-top:20px;padding-bottom:20px">
                 <div class="container-fluid " >
                   <a class="navbar-brand" href="#"><h4 style="font-weight: bolder;"></h4>
                     <img  src="../Assets/Logo02.png" alt="" style=" height:3vw;margin-left:40px" >
@@ -85,11 +89,13 @@ $result = $conn->query($sql);
                         <li class="nav-item">
                           <a class="nav-link active" href="reviews.php">Reviews</a>
                         </li>
+ 
                       </ul>
                   </div>
                   <!--<button  type="submit" style="margin-right:10px"><a class="btn02" href="../Controllers/userLogout.php" >Logout</a></button> -->
-                  <a  href="./userProfile.php" ><button class="btn02"  type="submit" style="margin-right:40px" >Profile</button>  </a> 
-                </div>
+                  <a href="./userProfile.php" style="<?php echo $profileButtonStyle; ?>">
+        <button class="btn02" type="submit" style="margin-right:40px">Profile</button>
+    </a>                 </div>
             </nav>
   </div>
 
@@ -114,8 +120,8 @@ $result = $conn->query($sql);
     <?php if ($result->num_rows > 0): ?>
       <?php while ($row = $result->fetch_assoc()): ?>
         <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
+          <div class="card mt-1">
+            <div class="card-body mt-3">
               <h4 class="card-title text-center"><?php echo $row["name"]; ?>  </h4>
               <h4 class="card-text  text-center"> <?php echo $row["rating"]; ?>.0 <i class="fas fa-star"></i></h4>
               <p class="card-text text-center">"<?php echo $row["message"]; ?>"</p>

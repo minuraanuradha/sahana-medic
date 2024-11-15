@@ -1,3 +1,12 @@
+<?php
+    session_start();
+
+    if(!isset($_SESSION['user_id'])) {
+        $profileButtonStyle = "display: none;";  
+    } else {
+        $profileButtonStyle = "";  
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +26,7 @@
 
   <!--Nav--> 
   <div class="row" >
-            <nav class="navbar navbar-expand-md -tertiary cnav " style="background-color: #;padding-top:20px;padding-bottom:20px">
+            <nav class="navbar navbar-expand-md -tertiary cnav " style="padding-top:20px;padding-bottom:20px">
                 <div class="container-fluid " >
                   <a class="navbar-brand" href="#"><h4 style="font-weight: bolder;"></h4>
                     <img  src="../Assets/Logo02.png" alt="" style=" height:3vw;margin-left:40px" >
@@ -39,11 +48,12 @@
                         <li class="nav-item">
                           <a class="nav-link" href="reviews.php">Reviews</a>
                         </li>
+ 
                       </ul>
                   </div>
-                  <!--<button  type="submit" style="margin-right:10px"><a class="btn02" href="../Controllers/userLogout.php" >Logout</a></button> -->
-                  <a  href="./userProfile.php" ><button class="btn02"  type="submit" style="margin-right:40px" >Profile</button>  </a> 
-                </div>
+                   <a href="./userProfile.php" style="<?php echo $profileButtonStyle; ?>">
+        <button class="btn02" type="submit" style="margin-right:40px">Profile</button>
+    </a>                </div>
             </nav>
   </div>
 

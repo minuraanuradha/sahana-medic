@@ -29,7 +29,7 @@ $conn->close();
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item  mt-1">
-                <a class="nav-link" href="doc_dashboard.php">
+                <a class="nav-link" href="doc_dashboard01.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -72,21 +72,6 @@ $conn->close();
                 </div>
             </li>
 
-            
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseStudent"
-                    aria-expanded="true" aria-controls="collapseStudent">
-                    <i class="fas fa-fw fa-calendar-alt"></i>
-                    <span>Calendar</span>
-                </a>
-                <div id="collapseStudent" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <!--<h6 class="collapse-header">Custom Utilities:</h6>-->
-                        <a class="collapse-item" href="calendar.php">View Calendar</a>
-                    </div>
-                </div>
-            </li>
 
                         
             <li class="nav-item">
@@ -99,8 +84,8 @@ $conn->close();
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <!--<h6 class="collapse-header">Custom Utilities:</h6>-->
-                        <a class="collapse-item" href="allCourses.php">All Notification</a>
-                        <a class="collapse-item" href="pendingCourses.php">Customer Feedbacks</a>
+                        <a class="collapse-item" href="doc_reviewReport.php">Reviews Report</a>
+                        <a class="collapse-item" href="doc_disease_Report.php">Disease Report</a>
                     </div>
                 </div>
             </li>

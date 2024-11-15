@@ -126,7 +126,7 @@
                             <div class="card shadow">
 
                                 <!-- Card Header - Dropdown -->
-                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between" style="background-color: #;">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 class="m-0 font-weight-bold text-truncate">Employee Details</h6>
                                 </div>
                                 <!-- Card Body -  -->
@@ -181,20 +181,20 @@
                                             </tbody>
                                         </table>
 
-                                    </div><!--end new-->
+                                    </div>
                                      
-                            </div><!--End Card Body -  -->
+                            </div>
                         </div>
                         
                     </div>
-                    <!--------------END Content Row 01 -------------->
+                
 
 
                 </div>
-                <!-- end of Begin Page container-fluid -->
+                
 
             </div>
-            <!-- End of Main Content -->
+        
 
             <!-- Footer -->
             <footer class="sticky-footer bg-succes">
@@ -210,10 +210,7 @@
         <!-- End of Content Wrapper -->
 
     </div>
-    <!-- End of Page Wrapper -->
 
-<!---------------------------------------------------------------------------------------->
-    <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
@@ -239,30 +236,23 @@
     </div>
 
 
-    <!-- Bootstrap core JavaScript-->
     <script src="./assets/jquery/jquery.min.js"></script>
     <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Core plugin JavaScript-->
     <script src="./assets/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for all pages-->
     <script src="./js/sb-admin-2.min.js"></script>
 
-    <!-- Page level plugins -->
     <script src="./assets/chart.js/Chart.min.js"></script>
 
-    <!-- Page level custom scripts -->
     <script src="./js/demo/chart-area-demo.js"></script>
     <script src="./js/demo/chart-pie-demo.js"></script>
 
-    <!-- Bootstrap JS and jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.1/bootstrap-icons.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- Button scripts for edit,save and delete -->
     <script>
         function editEmployee(employeeId) {
             var employeeName = document.getElementById('employee-name-' + employeeId).innerText;

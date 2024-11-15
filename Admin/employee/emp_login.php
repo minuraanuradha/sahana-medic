@@ -9,7 +9,7 @@
 
     <link rel="icon" type="image/x-icon" href="../doc/img/Logo03.png">
 
-    <title>Admin Login</title>
+    <title>Employee Login</title>
 
 </head>
 

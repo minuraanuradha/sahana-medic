@@ -127,7 +127,7 @@
                         <div class="card shadow">
                         
                                 <!-- Card Header - Dropdown -->
-                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between" style="background-color: #;">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between" >
                                     <h6 class="m-0 font-weight-bold text-truncate">Add Employee</h6>
                                 </div>
                                 <!-- Card Body -  -->

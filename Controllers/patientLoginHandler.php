@@ -29,18 +29,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     header("Location: ../User/index.php");
                     exit();
                 } else {
-                    echo "Incorrect password";
+                    $_SESSION['error'] = "Incorrect password";
+                    header("Location: ../User/Login.php");
+                    exit();
                 }
             } else {
-                echo "User not found";
+                $_SESSION['error'] = "User not found";
+                header("Location: ../User/Login.php");
+                exit();
             }
         } else {
-            echo "Error executing query: " . $stmt->error;
+            $_SESSION['error'] = "Error executing query: " . $stmt->error;
+            header("Location: ../User/Login.php");
+            exit();
         }
     
         $stmt->close();
     } else {
-        echo "Error preparing statement: " . $conn->error;
+        $_SESSION['error'] = "Error preparing statement: " . $conn->error;
+        header("Location: ../User/Login.php");
+        exit();
     }
 }
 

@@ -151,14 +151,14 @@
                             <div class="card shadow">
 
                                 <!-- Card Header - Dropdown -->
-                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between" style="background-color: #;">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between" >
                                     <h6 class="m-0 font-weight-bold text-truncate">Employee Details</h6>
                                 </div>
                                 <!-- Card Body -  -->
                                 <div class="card-body" style="background-color: #ffffff;" >
 
                                 <!--new-->
-                                    <div class="chart-area">
+                                    <div class="contaner-fluid">
 
                                     <div class="row">
                                         <?php if ($result->num_rows > 0): ?>
