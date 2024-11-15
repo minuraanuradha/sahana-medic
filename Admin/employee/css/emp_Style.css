@@ -6,32 +6,26 @@
 }
 body
 {
-    background-image: linear-gradient(to right, #1270B0 , #17A1FA);
+    background: radial-gradient( #006d21,#004013);
 }
-/*
-COLOUR PLATES
-White- #FFFFFF
-       #F3F6F6
-       #E2EAE9
-       #17A1FA
-Blue - #1270B0 
-*/
-
+h4{
+    font-size: 100%;
+}
 /*-------------------------Login---------------------*/
 
 #container-center
 {
-    background-color: #ffffff;
-    background-image: url("../../../Assets/bg_patten.png");
-    background-size:cover;
-    border-radius:20px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.626);
 }
 .text-h
 {
-    color: #1270B0;
-    font-size: 50px;
+    color: #004013;
+    font-size: 60px;
     font-weight:bolder;
     text-align: center;
+    text-shadow:  0 3px 3px rgba(0, 0, 0, 0.155);
 }
 .text-button
 {
@@ -50,7 +44,7 @@ Blue - #1270B0
 }
 .text-free
 {
-    color: #1270B0;
+    color: #004013;
     font-size: 20px;
     font-weight:bolder;
     text-align: center;
@@ -58,37 +52,50 @@ Blue - #1270B0
 #InputEmail1
 {
     background-color: #E2EAE9;
-    color: #1270B0;
+    color: #004013;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.151);
     border-style: hidden;
     padding-left: 40px;
-    font-weight:bold;
-    height:40px;
+    font-weight:600;
+    height:44px;
     border-radius:12px;
+    width: 90%;
+    border: #004013 1px solid;
 }
 #InputPwd
 {
     background-color: #E2EAE9;
-    color: #1270B0;
+    color: #004013;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.151);
     border-style: hidden;
     padding-left: 40px;
-    font-weight:bold;
-    height:40px;
-    border-radius:12px;
+    font-weight:600;
+    height:45px;
+    border-radius:10px;
+    width: 90%;
+    border: #004013 1px solid;
 }
 input::placeholder {
-    color: #1270B0;
+    color: #004013;
     font-size: 13px;
 }
+
 .btn
 {
-    background-color: #17A1FA;
-    border-style: hidden;
-    font-size: 18px;
-    font-weight: bolder;
-    height:40px;
-    border-radius:12px;
+    color: #FFFFFF;
+    font-size: 45px;
+    text-align: center;
+    background-color: #004013;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.355);
+    font-size: 17px;
+    font-weight: 600;
+    height:45px;
+    width: 90%;
+    border-radius:10px;
+    margin-bottom: 15px;
 }
 .btn:hover
 {
-    background-color: #1270B0;
+    background-color: #011a0e;
+    scale: 1.05;
 }

@@ -1,3 +1,13 @@
+<?php
+    session_start();
+
+    // Check if the user is not logged in
+    if(!isset($_SESSION['user_id'])) {
+        $profileButtonStyle = "display: none;";  
+    } else {
+        $profileButtonStyle = "";  
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +17,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 
+    <link rel="icon" type="image/x-icon" href="./Assets/Logo03.png">
+
     <title>About Us</title>
 </head>
 <body>
@@ -15,7 +27,7 @@
 
   <!--Nav--> 
   <div class="row" >
-            <nav class="navbar navbar-expand-md -tertiary cnav " style="background-color: #;padding-top:20px;padding-bottom:20px">
+            <nav class="navbar navbar-expand-md -tertiary cnav " style="padding-top:20px;padding-bottom:20px">
                 <div class="container-fluid " >
                   <a class="navbar-brand" href="#"><h4 style="font-weight: bolder;"></h4>
                     <img  src="../Assets/Logo02.png" alt="" style=" height:3vw;margin-left:40px" >
@@ -40,8 +52,9 @@
                       </ul>
                   </div>
                   <!--<button  type="submit" style="margin-right:10px"><a class="btn02" href="../Controllers/userLogout.php" >Logout</a></button> -->
-                  <a  href="./userProfile.php" ><button class="btn02"  type="submit" style="margin-right:40px" >Profile</button>  </a> 
-                </div>
+                  <a href="./userProfile.php" style="<?php echo $profileButtonStyle; ?>">
+        <button class="btn02" type="submit" style="margin-right:40px">Profile</button>
+    </a>                 </div>
             </nav>
   </div>
 

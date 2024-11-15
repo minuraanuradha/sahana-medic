@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="../../bootstrap/css/bootstrap-grid.rtl.min.css"> 
-    <link rel="stylesheet" href="../doc/css/doc_Stylee.css">
+    <link rel="stylesheet" href="../doc/css/doc_Style.css">
+
+    <link rel="icon" type="image/x-icon" href="../doc/img/Logo03.png">
 
     <title>Admin Login</title>
 
@@ -41,6 +43,7 @@
                 </div>
             </div>
     </div>
+
     </form>
     
     

@@ -24,13 +24,13 @@
           NAVIGATION LINKS
         </h6>
         <p>
-          <a href="index.php" class="text-reset">HOME</a>
+          <a href="#02" class="text-reset">HOME</a>
         </p>
         <p>
-          <a href="#!" class="text-reset">ABOUT US</a>
+          <a href="#03" class="text-reset">ABOUT US</a>
         </p>
         <p>
-          <a href="#!" class="text-reset">CONTACT US</a>
+          <a href="#05" class="text-reset">CONTACT US</a>
         </p>
       </div>
 
@@ -38,10 +38,10 @@
 
       
         <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-        <p><i class="bi bi-geo-alt-fill"></i> Riverston,Rattota,Matale - Sri Lanka</p>
+        <p><i class="bi bi-geo-alt-fill"></i> Sahana Medical Center,Aguruwella,Kegalle</p>
         <p>
           <i class="bi bi-envelope-fill"></i></i>
-          info@riverstonLife@gmail.com
+          Sahanamedicofficial@gmail.com
         </p>
         <p><i class="bi bi-telephone-fill"></i></i> +94 763 6165 37</p>
       </div>

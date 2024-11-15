@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['doctor_id'] = $row['doctor_id'];
         $_SESSION['full_name'] = $row['full_name'];
         
-        header("Location: ../Admin/doc/doc_dashboard.php");
+        header("Location: ../Admin/doc/doc_dashboard01.php");
         // echo "Login successful";
         exit();
     } else {

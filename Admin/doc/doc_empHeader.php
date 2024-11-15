@@ -1,6 +1,6 @@
 <?php
         session_start();
-            include '../../Model/connection.php';
+            include '../../Model/Connection.php';
 
             if (!isset($_SESSION['doctor_id'])) {
                 header("Location:doc_login.php");
@@ -27,7 +27,7 @@ $conn->close();
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item  mt-1">
-                <a class="nav-link" href="doc_dashboard.php">
+                <a class="nav-link" href="doc_dashboard01.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -42,7 +42,7 @@ $conn->close();
 
             
             <li class="nav-item ">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                <a class="nav-link collapsed" href="doc_appointmentVeiw.php" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
                     aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-clock"></i>
                     <span>Appoinments </span>
@@ -50,8 +50,7 @@ $conn->close();
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="allPackages.php">View </a>
-                        <a class="collapse-item" href="addPackages.php">Add </a>
+                        <a class="collapse-item" href="doc_appointmentVeiw.php">View </a>
                     </div>
                 </div>
             </li>
@@ -71,21 +70,6 @@ $conn->close();
                 </div>
             </li>
 
-            
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseStudent"
-                    aria-expanded="true" aria-controls="collapseStudent">
-                    <i class="fas fa-fw fa-calendar-alt"></i>
-                    <span>Calendar</span>
-                </a>
-                <div id="collapseStudent" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <!--<h6 class="collapse-header">Custom Utilities:</h6>-->
-                        <a class="collapse-item" href="calendar.php">View Calendar</a>
-                    </div>
-                </div>
-            </li>
 
                         
             <li class="nav-item">
@@ -98,28 +82,26 @@ $conn->close();
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <!--<h6 class="collapse-header">Custom Utilities:</h6>-->
-                        <a class="collapse-item" href="allCourses.php">All Notification</a>
-                        <a class="collapse-item" href="pendingCourses.php">Customer Feedbacks</a>
+                        <a class="collapse-item" href="doc_reviewReport.php">Reviews Report</a>
+                        <a class="collapse-item" href="doc_disease_Report.php">Disease Report</a>
                     </div>
                 </div>
             </li>
 
                                     
-            <!-- <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseadmin"
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseadmi"
                     aria-expanded="true" aria-controls="collapseadmin">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Manage Admin</span>
+                    <i class="fas fa-star"></i>
+                    <span>Rating</span>
                 </a>
-                <div id="collapseadmin" class="collapse" aria-labelledby="headingUtilities"
+                <div id="collapseadmi" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="addAdmin.php">Add User</a>
-                        <a class="collapse-item" href="admins.php">All Users</a>
+                        <a class="collapse-item" href="doc_ratingveiw.php">All Rating</a>
                     </div>
                 </div>
-            </li> -->
+            </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <!-- <li class="nav-item">
